@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vitalline — Movement as Medicine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F6F8F6;
+    --ink:#10231F;
+    --teal:#1C6E5C;
+    --teal-deep:#123F34;
+    --coral:#E8542E;
+    --sage:#DCE7E1;
+    --sage-line:#C4D5CC;
+    --pulse:#4A5FE8;
+    --white:#FFFFFF;
+    --paper: #FBFCFB;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--teal);
+  }
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    letter-spacing:-0.01em;
+    color:var(--ink);
+  }
+  .container{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 32px;
+  }
+  @media (max-width:640px){ .container{padding:0 20px;} }
+
+  /* ---------- NAV ---------- */
+  header.nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(246,248,246,0.86);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--sage-line);
+  }
+  .nav-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 32px;
+    max-width:1180px; margin:0 auto;
+  }
+  .logo{
+    display:flex; align-items:center; gap:10px;
+    font-family:'Fraunces', serif; font-weight:600; font-size:1.15rem;
+  }
+  .logo-mark{ width:20px; height:20px; }
+  .nav-links{ display:flex; gap:28px; list-style:none; font-size:0.92rem; }
+  .nav-links a{ text-decoration:none; opacity:0.75; transition:opacity .2s; }
+  .nav-links a:hover{ opacity:1; }
+  .nav-cta{
+    background:var(--teal); color:var(--white); border:none;
+    padding:10px 18px; border-radius:100px; font-size:0.88rem;
+    font-family:'IBM Plex Sans'; font-weight:500; cursor:pointer;
+    transition:background .2s;
+  }
+  .nav-cta:hover{ background:var(--teal-deep); }
+  @media (max-width:800px){ .nav-links{ display:none; } }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    overflow:hidden;
+    padding:76px 0 64px;
+    border-bottom:1px solid var(--sage-line);
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.05fr 0.95fr;
+    gap:56px;
+    align-items:center;
+  }
+  @media (max-width:960px){ .hero-grid{ grid-template-columns:1fr; } }
+
+  .hero-line-svg{
+    position:absolute; left:0; right:0; bottom:-6px;
+    width:100%; height:auto; opacity:0.35; pointer-events:none;
+  }
+  .hero h1{
+    font-size:clamp(2.3rem, 4.4vw, 3.6rem);
+    line-height:1.06;
+    margin:16px 0 20px;
+  }
+  .hero h1 em{ font-style:italic; color:var(--teal); }
+  .hero p.lede{
+    font-size:1.08rem;
+    max-width:46ch;
+    color:#334943;
+    margin-bottom:28px;
+  }
+  .hero-actions{ display:flex; gap:14px; flex-wrap:wrap; }
+  .btn-primary{
+    background:var(--ink); color:var(--white); border:none;
+    padding:13px 24px; border-radius:100px; font-size:0.95rem; font-weight:500;
+    cursor:pointer; text-decoration:none; display:inline-block;
+    transition:transform .15s ease, background .2s;
+  }
+  .btn-primary:hover{ background:var(--teal-deep); transform:translateY(-1px); }
+  .btn-secondary{
+    background:transparent; color:var(--ink); border:1px solid var(--sage-line);
+    padding:13px 24px; border-radius:100px; font-size:0.95rem; font-weight:500;
+    cursor:pointer; text-decoration:none; display:inline-block;
+    transition:border-color .2s, background .2s;
+  }
+  .btn-secondary:hover{ border-color:var(--teal); background:var(--sage); }
+
+  /* ---------- AI CONSOLE (signature element) ---------- */
+  .console{
+    background:linear-gradient(180deg, #12231F 0%, #0C1917 100%);
+    border-radius:20px;
+    padding:22px;
+    box-shadow:0 30px 60px -20px rgba(16,35,31,0.35);
+    position:relative;
+    border:1px solid rgba(255,255,255,0.06);
+  }
+  .console-head{
+    display:flex; align-items:center; justify-content:space-between;
+    margin-bottom:14px;
+    padding-bottom:14px;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+  }
+  .console-title{
+    display:flex; align-items:center; gap:10px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase;
+    color:#9FD9C6;
+  }
+  .dot-live{
+    width:7px; height:7px; border-radius:50%;
+    background:var(--coral);
+    box-shadow:0 0 0 0 rgba(232,84,46,0.6);
+    animation:pulse-dot 1.8s infinite;
+  }
+  @keyframes pulse-dot{
+    0%{ box-shadow:0 0 0 0 rgba(232,84,46,0.55); }
+    70%{ box-shadow:0 0 0 8px rgba(232,84,46,0); }
+    100%{ box-shadow:0 0 0 0 rgba(232,84,46,0); }
+  }
+  .console-ekg{ height:26px; width:100px; opacity:0.8; }
+  .console-body{
+    height:300px;
+    overflow-y:auto;
+    display:flex; flex-direction:column; gap:12px;
+    padding-right:4px;
+    scrollbar-width:thin;
+  }
+  .console-body::-webkit-scrollbar{ width:5px; }
+  .console-body::-webkit-scrollbar-thumb{ background:rgba(255,255,255,0.15); border-radius:10px; }
+
+  .msg{
+    max-width:88%;
+    padding:11px 14px;
+    border-radius:12px;
+    font-size:0.9rem;
+    line-height:1.5;
+  }
+  .msg.ai{
+    background:rgba(255,255,255,0.06);
+    color:#EAF4F0;
+    align-self:flex-start;
+    border:1px solid rgba(255,255,255,0.06);
+  }
+  .msg.user{
+    background:var(--pulse);
+    color:var(--white);
+    align-self:flex-end;
+  }
+  .msg.ai .tag{
+    display:block; font-family:'IBM Plex Mono'; font-size:0.62rem;
+    letter-spacing:0.1em; text-transform:uppercase; color:#7FBFA9; margin-bottom:5px;
+  }
+  .console-suggest{
+    display:flex; gap:8px; flex-wrap:wrap; margin:12px 0;
+  }
+  .chip{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.1);
+    color:#CFE6DD;
+    font-size:0.78rem;
+    padding:7px 12px;
+    border-radius:100px;
+    cursor:pointer;
+    font-family:'IBM Plex Sans';
+    transition:background .15s;
+  }
+  .chip:hover{ background:rgba(255,255,255,0.12); }
+  .console-input-row{
+    display:flex; gap:8px; margin-top:6px;
+  }
+  .console-input-row input{
+    flex:1;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:100px;
+    padding:12px 16px;
+    color:var(--white);
+    font-family:'IBM Plex Sans';
+    font-size:0.9rem;
+    outline:none;
+  }
+  .console-input-row input::placeholder{ color:rgba(255,255,255,0.4); }
+  .console-input-row input:focus{ border-color:var(--pulse); }
+  .console-send{
+    background:var(--pulse);
+    border:none; color:white; width:42px; height:42px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center; cursor:pointer;
+    flex-shrink:0;
+    transition:background .15s;
+  }
+  .console-send:hover{ background:#3849C4; }
+  .console-note{
+    font-family:'IBM Plex Mono'; font-size:0.66rem; color:rgba(255,255,255,0.35);
+    margin-top:10px; text-align:center; letter-spacing:0.02em;
+  }
+  .typing-dot{ display:inline-block; width:5px; height:5px; border-radius:50%; background:#7FBFA9; margin-right:3px; animation:blink 1.2s infinite; }
+  .typing-dot:nth-child(2){ animation-delay:0.2s; }
+  .typing-dot:nth-child(3){ animation-delay:0.4s; }
+  @keyframes blink{ 0%,80%,100%{opacity:0.25;} 40%{opacity:1;} }
+
+  /* ---------- SECTIONS ---------- */
+  section{ padding:88px 0; }
+  .section-head{ max-width:640px; margin-bottom:44px; }
+  .section-head h2{ font-size:clamp(1.7rem,3vw,2.3rem); margin-top:10px; }
+  .section-head p{ color:#3E544D; margin-top:12px; font-size:1rem; }
+
+  /* condition cards */
+  .conditions-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(270px, 1fr));
+    gap:18px;
+  }
+  .cond-card{
+    background:var(--paper);
+    border:1px solid var(--sage-line);
+    border-radius:16px;
+    padding:22px;
+    cursor:pointer;
+    transition:border-color .2s, transform .2s, box-shadow .2s;
+  }
+  .cond-card:hover{ border-color:var(--teal); transform:translateY(-2px); box-shadow:0 12px 24px -14px rgba(16,35,31,0.18); }
+  .cond-card .icon{ width:34px; height:34px; margin-bottom:14px; color:var(--teal); }
+  .cond-card h3{ font-size:1.12rem; margin-bottom:6px; }
+  .cond-card p.sub{ font-size:0.86rem; color:#5B6F68; margin-bottom:14px; }
+  .cond-card .expand{
+    font-family:'IBM Plex Mono'; font-size:0.72rem; letter-spacing:0.06em;
+    text-transform:uppercase; color:var(--coral);
+    display:flex; align-items:center; gap:6px;
+  }
+  .cond-detail{
+    display:none;
+    margin-top:16px; padding-top:16px;
+    border-top:1px dashed var(--sage-line);
+    font-size:0.87rem;
+  }
+  .cond-detail.open{ display:block; }
+  .cond-detail .row{ margin-bottom:10px; }
+  .cond-detail .label{ font-family:'IBM Plex Mono'; font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--teal); display:block; margin-bottom:4px; }
+
+  /* benefit categories */
+  .benefits-wrap{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    gap:2px;
+    background:var(--sage-line);
+    border-radius:16px;
+    overflow:hidden;
+    border:1px solid var(--sage-line);
+  }
+  .benefit-tile{
+    background:var(--paper);
+    padding:28px 24px;
+    transition:background .2s;
+  }
+  .benefit-tile:hover{ background:var(--sage); }
+  .benefit-tile .num{ font-family:'IBM Plex Mono'; font-size:0.75rem; color:var(--coral); }
+  .benefit-tile h3{ font-size:1.05rem; margin:10px 0 8px; }
+  .benefit-tile p{ font-size:0.86rem; color:#4B5F58; }
+
+  /* goal finder */
+  .goal-panel{
+    background:var(--sage);
+    border-radius:20px;
+    padding:36px;
+  }
+  .goal-tabs{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:24px; }
+  .goal-tab{
+    background:var(--white); border:1px solid var(--sage-line); padding:10px 16px;
+    border-radius:100px; font-size:0.86rem; cursor:pointer; font-family:'IBM Plex Sans';
+    transition:background .15s, color .15s;
+  }
+  .goal-tab.active{ background:var(--teal); color:white; border-color:var(--teal); }
+  .goal-output{
+    background:var(--white); border-radius:14px; padding:24px;
+    display:grid; grid-template-columns:repeat(3,1fr); gap:20px;
+  }
+  @media (max-width:760px){ .goal-output{ grid-template-columns:1fr; } }
+  .goal-output .col .label{ font-family:'IBM Plex Mono'; font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--teal); margin-bottom:8px; display:block; }
+  .goal-output .col ul{ padding-left:18px; font-size:0.9rem; color:#33473F; }
+  .goal-output .col li{ margin-bottom:6px; }
+
+  footer{
+    border-top:1px solid var(--sage-line);
+    padding:40px 0;
+    font-size:0.82rem;
+    color:#5B6F68;
+  }
+  footer .disclaimer{
+    background:var(--sage);
+    border-radius:14px;
+    padding:18px 20px;
+    margin-bottom:24px;
+    font-size:0.84rem;
+    color:#334943;
+  }
+  footer .foot-bottom{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="logo">
+      <svg class="logo-mark" viewBox="0 0 24 24" fill="none"><path d="M2 12h4l2-7 4 14 3-10 2 5h5" stroke="#1C6E5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Vitalline
+    </div>
+    <ul class="nav-links">
+      <li><a href="#conditions">Conditions</a></li>
+      <li><a href="#benefits">Why movement works</a></li>
+      <li><a href="#goals">Find your routine</a></li>
+      <li><a href="#console">Ask the AI</a></li>
+    </ul>
+    <button class="nav-cta" onclick="document.getElementById('console-input').focus(); document.getElementById('console').scrollIntoView({behavior:'smooth'});">Ask Vitalline</button>
+  </div>
+</header>
+
+<section class="hero" id="console">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Movement, mapped to medicine</span>
+      <h1>Every condition <em>tells you</em> how to move.</h1>
+      <p class="lede">Vitalline pairs a plain-language library of common conditions with an AI clinician's-aide that explains, in real time, which exercise helps which body — from managing blood sugar to easing arthritis to steadying an anxious mind.</p>
+      <div class="hero-actions">
+        <a href="#conditions" class="btn-primary">Browse conditions</a>
+        <a href="#goals" class="btn-secondary">Find my routine</a>
+      </div>
+    </div>
+
+    <div class="console">
+      <div class="console-head">
+        <div class="console-title"><span class="dot-live"></span> Vitalline AI · live</div>
+        <svg class="console-ekg" viewBox="0 0 100 26"><polyline id="ekg-line" points="0,13 20,13 26,4 32,22 38,13 100,13" fill="none" stroke="#4A5FE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="console-body" id="console-body">
+        <div class="msg ai"><span class="tag">Vitalline</span>Tell me a condition, or how you're feeling, and I'll suggest exercise that actually helps — plus what to watch out for. I'm not a doctor, so treat this as a starting point, not a prescription.</div>
+      </div>
+      <div class="console-suggest">
+        <button class="chip" onclick="askConsole('What exercise helps with type 2 diabetes?')">Type 2 diabetes</button>
+        <button class="chip" onclick="askConsole('I have knee arthritis, what movement is safe?')">Knee arthritis</button>
+        <button class="chip" onclick="askConsole('Best exercise for anxiety and low mood?')">Anxiety</button>
+        <button class="chip" onclick="askConsole('How does exercise lower blood pressure?')">Blood pressure</button>
+      </div>
+      <div class="console-input-row">
+        <input id="console-input" type="text" placeholder="Ask about a condition, symptom, or goal..." onkeydown="if(event.key==='Enter'){sendConsole();}">
+        <button class="console-send" onclick="sendConsole()" aria-label="Send">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12h16M14 6l6 6-6 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="console-note">AI-generated · always confirm with a licensed clinician before changing your routine</div>
+    </div>
+  </div>
+
+  <svg class="hero-line-svg" viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <polyline points="0,30 140,30 165,8 190,52 215,30 420,30 445,14 470,46 495,30 700,30 725,6 750,54 775,30 980,30 1005,12 1030,48 1055,30 1200,30" fill="none" stroke="#1C6E5C" stroke-width="1.5"/>
+  </svg>
+</section>
+
+<section id="conditions">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The condition library</span>
+      <h2>Eight conditions, and the movement that answers each one.</h2>
+      <p>Tap a card for the exercises clinicians commonly recommend, why they help, and what to be careful of.</p>
+    </div>
+    <div class="conditions-grid" id="conditions-grid"></div>
+  </div>
+</section>
+
+<section id="benefits" style="background:var(--sage);">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The mechanism</span>
+      <h2>Why movement works, category by category.</h2>
+      <p>Different types of exercise trigger different repair systems in the body. Most routines work best combining more than one.</p>
+    </div>
+    <div class="benefits-wrap" id="benefits-wrap"></div>
+  </div>
+</section>
+
+<section id="goals">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Build your routine</span>
+      <h2>Pick a goal. Get a starting plan.</h2>
+      <p>A simple weekly shape — nothing fancier than what most guidelines actually recommend.</p>
+    </div>
+    <div class="goal-panel">
+      <div class="goal-tabs" id="goal-tabs"></div>
+      <div class="goal-output" id="goal-output"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="disclaimer">
+      <strong>Not medical advice.</strong> Vitalline explains general exercise concepts for common conditions. It cannot see your history, medications, or test results. Always check with a doctor or physiotherapist before starting a new routine, especially with a diagnosed heart, lung, bone, or metabolic condition.
+    </div>
+    <div class="foot-bottom">
+      <span>Vitalline — movement as medicine</span>
+      <span>© 2026 · Educational resource, not a healthcare provider</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ---------------- CONDITIONS DATA ---------------- */
+const conditions = [
+  {
+    name:"Type 2 Diabetes",
+    sub:"Blood sugar & insulin sensitivity",
+    icon:'<svg viewBox="0 0 24 24" fill="none"><path d="M12 3c3 4 6 7 6 11a6 6 0 1 1-12 0c0-4 3-7 6-11z" stroke="currentColor" stroke-width="1.6"/></svg>',
+    exercises:"Brisk walking 30 min/day, cycling, and 2× weekly resistance training (bands or light weights).",
+    benefit:"Muscle contraction pulls glucose out of the bloodstream independent of insulin, and regular training improves how well cells respond to insulin over weeks.",
+    caution:"Check blood sugar before/after exercise if on insulin or sulfonylureas; carry a fast carb source."
+  },
+  {
+    name:"Hypertension",
+    sub:"High blood pressure",
+    icon:'<svg viewBox="0 0 24 24" fill="none"><path d="M3 12h4l2-7 4 14 3-10 2 5h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    exercises:"Aerobic sessions — walking, swimming, or cycling — 5 days a week, 30 minutes at a conversational pace.",
+    benefit:"Regular aerobic effort improves blood vessel flexibility and lowers resting systolic pressure, often within 4–6 weeks.",
+    caution:"Avoid heavy breath-holding strength work (Valsalva) until pressure is well-controlled; warm up gradually."
+  },
+  {
+    name:"Coronary Heart Disease",
+    sub:"Narrowed heart arteries",
+    icon:'<svg viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.4-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 5c-2.5 4.6-9.5 9-9.5 9z" stroke="currentColor" stroke-width="1.6"/></svg>',
+    exercises:"Supervised cardiac-rehab-style walking or stationary cycling, building duration slowly under guidance.",
+    benefit:"Gradual aerobic conditioning strengthens the heart muscle and improves collateral circulation around blocked vessels.",
+    caution:"Should be started under medical supervision, especially soon after a cardiac event."
+  },
+  {
+    name:"Osteoarthritis",
+    sub:"Joint pain & stiffness",
+    icon:'<svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"/><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
+    exercises:"Swimming, water aerobics, stationary cycling, and gentle range-of-motion yoga.",
+    benefit:"Water and low-impact movement strengthen the muscles supporting a joint without loading the worn cartilage.",
+    caution:"Skip high-impact activity (running, jumping) on flare days; ease into new ranges of motion."
+  },
+  {
+    name:"Weight Management",
+    sub:"Obesity & metabolic load",
+    icon:'<svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.6"/><path d="M9 12h6M12 9v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
+    exercises:"Daily brisk walking, 2–3× resistance training, with intervals added once a base fitness is built.",
+    benefit:"Combining cardio with strength work burns calories while preserving lean muscle, which keeps metabolism higher long-term.",
+    caution:"Increase volume gradually to protect joints carrying extra load; supportive footwear matters."
+  },
+  {
+    name:"Anxiety & Depression",
+    sub:"Mood & stress regulation",
+    icon:'<svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-9.33-9A5.4 5.4 0 0 1 12 6.5 5.4 5.4 0 0 1 21.33 12C19 16.65 12 21 12 21z" stroke="currentColor" stroke-width="1.6"/></svg>',
+    exercises:"Rhythmic aerobic movement — brisk walking, dancing, running, or cycling — most days, plus yoga for the nervous-system reset.",
+    benefit:"Exercise raises endorphins and BDNF, lowers cortisol, and reliably improves sleep quality, which compounds the mood benefit.",
+    caution:"On low-energy days, a 10-minute walk counts; consistency matters more than intensity."
+  },
+  {
+    name:"Osteoporosis",
+    sub:"Low bone density",
+    icon:'<svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M6 8h12M6 16h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
+    exercises:"Weight-bearing walking, stair climbing, and resistance-band or light-weight strength training 2–3×/week.",
+    benefit:"Bone responds to mechanical load by laying down new density — the same signal that builds muscle also builds bone.",
+    caution:"Avoid high-impact jumping or spinal-flexion moves (like full sit-ups) if fracture risk is elevated."
+  },
+  {
+    name:"Asthma & COPD",
+    sub:"Airway & lung capacity",
+    icon:'<svg viewBox="0 0 24 24" fill="none"><path d="M9 3v6a3 3 0 0 1-3 3H4M15 3v6a3 3 0 0 0 3 3h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M9 12v5a3 3 0 0 0 6 0v-5" stroke="currentColor" stroke-width="1.6"/></svg>',
+    exercises:"Swimming (humid air is gentler on airways), walking, and breathing-focused practices like pranayama yoga.",
+    benefit:"Paced aerobic training improves how efficiently the body uses oxygen, easing breathlessness during daily activity over time.",
+    caution:"Keep a rescue inhaler on hand; warm up longer in cold, dry air, which can trigger airway tightening."
+  }
+];
+
+const grid = document.getElementById('conditions-grid');
+conditions.forEach((c,i)=>{
+  const card = document.createElement('div');
+  card.className = 'cond-card';
+  card.innerHTML = `
+    <div class="icon">${c.icon}</div>
+    <h3>${c.name}</h3>
+    <p class="sub">${c.sub}</p>
+    <div class="expand">View exercise plan ↓</div>
+    <div class="cond-detail" id="detail-${i}">
+      <div class="row"><span class="label">Recommended movement</span>${c.exercises}</div>
+      <div class="row"><span class="label">Why it helps</span>${c.benefit}</div>
+      <div class="row"><span class="label">Caution</span>${c.caution}</div>
+    </div>
+  `;
+  card.addEventListener('click', ()=>{
+    document.getElementById(`detail-${i}`).classList.toggle('open');
+  });
+  grid.appendChild(card);
+});
+
+/* ---------------- BENEFITS DATA ---------------- */
+const benefits = [
+  {n:"01", title:"Cardio & aerobic", body:"Strengthens the heart muscle, lowers resting blood pressure, and improves lung efficiency over weeks of consistent effort."},
+  {n:"02", title:"Strength training", body:"Builds muscle that improves insulin sensitivity, protects joints, and signals bone to increase density."},
+  {n:"03", title:"Flexibility & mobility", body:"Maintains joint range of motion, reduces stiffness, and lowers injury risk during other activity."},
+  {n:"04", title:"Mind-body practice", body:"Yoga and tai chi lower cortisol, improve balance, and are gentle enough for flare-ups or recovery days."},
+  {n:"05", title:"Low-impact aerobic", body:"Swimming and cycling deliver cardio benefit without loading joints — ideal for arthritis or high body weight."}
+];
+const bwrap = document.getElementById('benefits-wrap');
+benefits.forEach(b=>{
+  const tile = document.createElement('div');
+  tile.className = 'benefit-tile';
+  tile.innerHTML = `<span class="num">${b.n}</span><h3>${b.title}</h3><p>${b.body}</p>`;
+  bwrap.appendChild(tile);
+});
+
+/* ---------------- GOAL FINDER ---------------- */
+const goals = {
+  "Heart health": {
+    frequency:["5 days/week aerobic", "20–40 min per session", "Add 2× light strength"],
+    exercises:["Brisk walking", "Cycling", "Swimming laps"],
+    watch:["Keep effort conversational-pace", "Warm up 5–10 min", "Stop for chest pain or dizziness"]
+  },
+  "Joint & bone health": {
+    frequency:["3× resistance training/week", "2–3× weight-bearing cardio", "Daily gentle mobility"],
+    exercises:["Resistance bands", "Stair climbing", "Water aerobics"],
+    watch:["Avoid high-impact on flare days", "Progress load slowly", "Prioritize supportive footwear"]
+  },
+  "Weight management": {
+    frequency:["Daily movement, 30+ min", "2–3× strength training", "1–2× interval training once fit"],
+    exercises:["Brisk walking", "Circuit strength training", "Cycling intervals"],
+    watch:["Increase volume gradually", "Protein alongside training", "Track effort, not just scale weight"]
+  },
+  "Mental wellbeing": {
+    frequency:["Most days, 20–30 min", "Any rhythmic aerobic activity", "1–2× yoga or stretching"],
+    exercises:["Walking outdoors", "Dancing", "Yoga or tai chi"],
+    watch:["Consistency beats intensity", "Morning light + movement helps sleep", "A short walk still counts"]
+  }
+};
+const tabsEl = document.getElementById('goal-tabs');
+const outputEl = document.getElementById('goal-output');
+function renderGoal(name){
+  const g = goals[name];
+  outputEl.innerHTML = `
+    <div class="col"><span class="label">Weekly shape</span><ul>${g.frequency.map(x=>`<li>${x}</li>`).join('')}</ul></div>
+    <div class="col"><span class="label">Go-to exercises</span><ul>${g.exercises.map(x=>`<li>${x}</li>`).join('')}</ul></div>
+    <div class="col"><span class="label">Watch for</span><ul>${g.watch.map(x=>`<li>${x}</li>`).join('')}</ul></div>
+  `;
+  [...tabsEl.children].forEach(t=> t.classList.toggle('active', t.textContent===name));
+}
+Object.keys(goals).forEach((name,i)=>{
+  const tab = document.createElement('button');
+  tab.className = 'goal-tab' + (i===0 ? ' active':'');
+  tab.textContent = name;
+  tab.onclick = ()=> renderGoal(name);
+  tabsEl.appendChild(tab);
+});
+renderGoal(Object.keys(goals)[0]);
+
+/* ---------------- AI CONSOLE ---------------- */
+const consoleBody = document.getElementById('console-body');
+const consoleInput = document.getElementById('console-input');
+
+function addMessage(role, html){
+  const div = document.createElement('div');
+  div.className = 'msg ' + role;
+  if(role==='ai'){
+    div.innerHTML = '<span class="tag">Vitalline</span>' + html;
+  } else {
+    div.textContent = html;
+  }
+  consoleBody.appendChild(div);
+  consoleBody.scrollTop = consoleBody.scrollHeight;
+  return div;
+}
+
+function askConsole(text){
+  consoleInput.value = text;
+  sendConsole();
+}
+
+async function sendConsole(){
+  const text = consoleInput.value.trim();
+  if(!text) return;
+  addMessage('user', text);
+  consoleInput.value = '';
+
+  const loading = addMessage('ai', '<span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>');
+
+  try{
+    const response = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-6",
+        max_tokens: 1000,
+        system: "You are Vitalline, a friendly exercise-and-health explainer embedded on a wellness website. Answer questions about diseases/conditions and which exercises help, mechanisms of benefit, and safety cautions. Keep answers to 3-5 sentences, plain language, warm but factual tone. Always make clear you are not a substitute for a doctor, and if a question describes an emergency or acute symptom (chest pain, can't breathe, suicidal thoughts), tell them to seek immediate medical help instead of exercise advice.",
+        messages: [{ role: "user", content: text }]
+      })
+    });
+    const data = await response.json();
+    let reply = "Sorry, I couldn't reach the AI service just now — please try again in a moment.";
+    if(data && data.content){
+      reply = data.content.map(b => b.text || "").filter(Boolean).join(" ").trim() || reply;
+    }
+    loading.innerHTML = '<span class="tag">Vitalline</span>' + reply.replace(/\n/g,'<br>');
+  }catch(err){
+    loading.innerHTML = '<span class="tag">Vitalline</span>Something went wrong reaching the AI service. Please try again.';
+  }
+  consoleBody.scrollTop = consoleBody.scrollHeight;
+}
+</script>
+
+</body>
+</html>
