@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Vitalline — Movement as Medicine
 
 A single-page health & wellness website that connects common medical conditions to the exercise that helps them, with a live AI health console as its centerpiece.
@@ -55,3 +56,6 @@ This project is an educational resource. It does not provide medical advice, dia
 ## License
 
 MIT — feel free to fork, adapt, and reuse.
+=======
+# Health-care-
+>>>>>>> bb51a30c675bbff823b2a186200a97be21522c47
