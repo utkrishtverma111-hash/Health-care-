@@ -2,6 +2,9 @@
 # Vitalline — Movement as Medicine
 
 A single-page health & wellness website that connects common medical conditions to the exercise that helps them, with a live AI health console as its centerpiece.
+<img width="334" height="334" alt="image" src="https://github.com/user-attachments/assets/c965d390-2d9d-4de1-99fa-684ac07daf4c" />
+<img width="368" height="331" alt="image" src="https://github.com/user-attachments/assets/7238148b-f236-4693-b7dd-08dcdc97ca9e" />
+<img width="921" height="347" alt="image" src="https://github.com/user-attachments/assets/80afc6e8-abe1-4359-af8f-8c0b9839576b" />
 
 ![type](https://img.shields.io/badge/type-static%20website-1C6E5C)
 ![stack](https://img.shields.io/badge/stack-HTML%20%2F%20CSS%20%2F%20JS-4A5FE8)
