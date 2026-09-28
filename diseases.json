@@ -1,0 +1,2822 @@
+[
+  {
+    "id": "type2-diabetes",
+    "name": "Type 2 Diabetes",
+    "aliases": [
+      "type 2 diabetes",
+      "diabetes",
+      "blood sugar",
+      "insulin resistance",
+      "high glucose",
+      "sugar problem",
+      "high sugar",
+      "sugar level",
+      "sugar patient",
+      "diabetic",
+      "sugar is high",
+      "sugar high",
+      "blood sugar high",
+      "high blood sugar"
+    ],
+    "category": "Metabolic",
+    "symptoms": [
+      "Increased thirst and urination",
+      "Fatigue",
+      "Blurred vision",
+      "Slow-healing wounds"
+    ],
+    "causes": [
+      "Insulin resistance",
+      "Excess body weight",
+      "Sedentary lifestyle",
+      "Genetic predisposition"
+    ],
+    "curability": "Not curable, but highly manageable and sometimes reversible into remission with sustained lifestyle change.",
+    "conventional_treatment": [
+      "Blood glucose monitoring",
+      "Metformin or other prescribed glucose-lowering medication",
+      "Dietary changes (reduced refined carbs/sugar)",
+      "Regular physical activity"
+    ],
+    "exercise_and_lifestyle": [
+      "Brisk walking 30 min/day",
+      "Resistance training 2x/week",
+      "Weight management if applicable"
+    ],
+    "caution": "Medication and insulin dosing must be managed by a doctor; exercise can affect blood sugar levels and needs monitoring, especially on insulin."
+  },
+  {
+    "id": "hypertension",
+    "name": "Hypertension (High Blood Pressure)",
+    "aliases": [
+      "hypertension",
+      "high blood pressure",
+      "blood pressure",
+      "bp",
+      "high bp",
+      "bp problem"
+    ],
+    "category": "Cardiovascular",
+    "symptoms": [
+      "Often none (silent)",
+      "Occasional headaches",
+      "Dizziness",
+      "Nosebleeds in severe cases"
+    ],
+    "causes": [
+      "Genetics",
+      "High sodium diet",
+      "Obesity",
+      "Chronic stress",
+      "Sedentary lifestyle"
+    ],
+    "curability": "Not curable, but very controllable through medication and lifestyle change.",
+    "conventional_treatment": [
+      "ACE inhibitors, ARBs, calcium channel blockers, or diuretics as prescribed",
+      "Sodium reduction",
+      "Regular blood pressure monitoring"
+    ],
+    "exercise_and_lifestyle": [
+      "Aerobic exercise 5x/week, 30 min",
+      "Reduce salt and alcohol intake",
+      "Stress management"
+    ],
+    "caution": "Avoid heavy breath-holding strength training (Valsalva maneuver) until blood pressure is well controlled."
+  },
+  {
+    "id": "coronary-heart-disease",
+    "name": "Coronary Heart Disease",
+    "aliases": [
+      "heart disease",
+      "coronary artery disease",
+      "clogged arteries",
+      "cad"
+    ],
+    "category": "Cardiovascular",
+    "symptoms": [
+      "Chest pain or pressure (angina)",
+      "Shortness of breath",
+      "Fatigue during exertion"
+    ],
+    "causes": [
+      "Atherosclerosis (plaque buildup)",
+      "High cholesterol",
+      "Smoking",
+      "Diabetes",
+      "Hypertension"
+    ],
+    "curability": "Not curable outright; managed through medication, lifestyle change, and sometimes procedures (stents, bypass surgery).",
+    "conventional_treatment": [
+      "Statins for cholesterol",
+      "Antiplatelet medication (e.g. aspirin, as prescribed)",
+      "Cardiac rehabilitation program",
+      "Possible angioplasty/stenting or bypass surgery in severe cases"
+    ],
+    "exercise_and_lifestyle": [
+      "Supervised cardiac rehab walking/cycling, building duration gradually",
+      "Smoking cessation",
+      "Mediterranean-style diet"
+    ],
+    "caution": "Exercise for diagnosed heart disease should start under medical supervision, especially after a cardiac event."
+  },
+  {
+    "id": "osteoarthritis",
+    "name": "Osteoarthritis",
+    "aliases": [
+      "osteoarthritis",
+      "joint pain",
+      "arthritis",
+      "knee pain",
+      "stiff joints"
+    ],
+    "category": "Musculoskeletal",
+    "symptoms": [
+      "Joint pain and stiffness",
+      "Reduced range of motion",
+      "Swelling after activity"
+    ],
+    "causes": [
+      "Cartilage wear over time",
+      "Joint injury history",
+      "Excess body weight",
+      "Aging"
+    ],
+    "curability": "Not curable; progression can be slowed and symptoms well managed.",
+    "conventional_treatment": [
+      "Pain relief (e.g. acetaminophen or NSAIDs as advised by a doctor)",
+      "Physical therapy",
+      "Weight management",
+      "Joint replacement surgery in advanced cases"
+    ],
+    "exercise_and_lifestyle": [
+      "Swimming and water aerobics",
+      "Stationary cycling",
+      "Gentle range-of-motion yoga"
+    ],
+    "caution": "Avoid high-impact activity (running, jumping) during flare-ups."
+  },
+  {
+    "id": "obesity",
+    "name": "Obesity / Weight Management",
+    "aliases": [
+      "obesity",
+      "overweight",
+      "weight loss",
+      "excess weight",
+      "belly fat",
+      "weight gain",
+      "lose weight"
+    ],
+    "category": "Metabolic",
+    "symptoms": [
+      "Elevated BMI",
+      "Fatigue",
+      "Joint strain",
+      "Increased risk of related conditions"
+    ],
+    "causes": [
+      "Caloric surplus over time",
+      "Sedentary lifestyle",
+      "Genetics",
+      "Hormonal factors",
+      "Sleep deprivation"
+    ],
+    "curability": "Manageable and often reversible through sustained lifestyle changes; in some cases medication or surgery is used alongside.",
+    "conventional_treatment": [
+      "Structured calorie-appropriate nutrition plan",
+      "Behavioral counseling",
+      "Prescribed weight-loss medication in some cases",
+      "Bariatric surgery for severe cases"
+    ],
+    "exercise_and_lifestyle": [
+      "Daily brisk walking",
+      "Resistance training to preserve lean mass",
+      "Gradual intensity increase (HIIT once base fitness is built)"
+    ],
+    "caution": "Increase exercise volume gradually to protect joints carrying extra load."
+  },
+  {
+    "id": "anxiety",
+    "name": "Generalized Anxiety Disorder",
+    "aliases": [
+      "anxiety",
+      "anxious",
+      "panic",
+      "worry",
+      "nervousness",
+      "panic attack",
+      "feeling anxious",
+      "stress"
+    ],
+    "category": "Mental health",
+    "symptoms": [
+      "Persistent excessive worry",
+      "Restlessness",
+      "Muscle tension",
+      "Sleep disturbance"
+    ],
+    "causes": [
+      "Genetic predisposition",
+      "Chronic stress",
+      "Brain chemistry factors",
+      "Life circumstances"
+    ],
+    "curability": "Highly treatable; many people achieve full symptom remission with therapy, and/or medication, and lifestyle support.",
+    "conventional_treatment": [
+      "Cognitive behavioral therapy (CBT)",
+      "SSRIs or other medication as prescribed by a psychiatrist",
+      "Mindfulness-based stress reduction"
+    ],
+    "exercise_and_lifestyle": [
+      "Rhythmic aerobic exercise (running, dancing, cycling)",
+      "Yoga or tai chi",
+      "Consistent sleep schedule"
+    ],
+    "caution": "Exercise supports treatment but does not replace therapy or medication for moderate-to-severe cases."
+  },
+  {
+    "id": "depression",
+    "name": "Depression (Major Depressive Disorder)",
+    "aliases": [
+      "depression",
+      "low mood",
+      "sadness",
+      "depressed",
+      "feeling low",
+      "feeling depressed"
+    ],
+    "category": "Mental health",
+    "symptoms": [
+      "Persistent low mood",
+      "Loss of interest in activities",
+      "Fatigue",
+      "Sleep or appetite changes"
+    ],
+    "causes": [
+      "Brain chemistry imbalance",
+      "Genetics",
+      "Chronic stress or trauma",
+      "Chronic illness"
+    ],
+    "curability": "Highly treatable; many people recover fully or achieve long-term remission with proper care.",
+    "conventional_treatment": [
+      "Psychotherapy (e.g. CBT)",
+      "Antidepressant medication as prescribed by a doctor/psychiatrist",
+      "Structured routine and social support"
+    ],
+    "exercise_and_lifestyle": [
+      "Regular aerobic activity (shown to raise BDNF and endorphins)",
+      "Morning sunlight exposure",
+      "Consistent sleep routine"
+    ],
+    "caution": "If there are thoughts of self-harm or suicide, seek immediate professional help rather than relying on exercise alone."
+  },
+  {
+    "id": "osteoporosis",
+    "name": "Osteoporosis",
+    "aliases": [
+      "osteoporosis",
+      "low bone density",
+      "weak bones",
+      "brittle bones"
+    ],
+    "category": "Musculoskeletal",
+    "symptoms": [
+      "Often silent until a fracture occurs",
+      "Loss of height over time",
+      "Stooped posture"
+    ],
+    "causes": [
+      "Aging",
+      "Hormonal changes (e.g. post-menopause)",
+      "Low calcium/vitamin D intake",
+      "Sedentary lifestyle"
+    ],
+    "curability": "Not curable, but bone loss can be slowed and fracture risk reduced significantly.",
+    "conventional_treatment": [
+      "Calcium and vitamin D supplementation as advised",
+      "Bisphosphonates or other bone-density medication as prescribed",
+      "Fall-prevention strategies"
+    ],
+    "exercise_and_lifestyle": [
+      "Weight-bearing walking",
+      "Resistance-band or light strength training",
+      "Balance exercises to reduce fall risk"
+    ],
+    "caution": "Avoid high-impact jumping or spinal-flexion movements (like full sit-ups) if fracture risk is elevated."
+  },
+  {
+    "id": "asthma",
+    "name": "Asthma",
+    "aliases": [
+      "asthma",
+      "wheezing",
+      "breathlessness"
+    ],
+    "category": "Respiratory",
+    "symptoms": [
+      "Wheezing",
+      "Shortness of breath",
+      "Chest tightness",
+      "Coughing, especially at night"
+    ],
+    "causes": [
+      "Airway inflammation",
+      "Allergens",
+      "Genetic predisposition",
+      "Respiratory infections"
+    ],
+    "curability": "Not curable, but very well controlled with proper management; many people live symptom-free.",
+    "conventional_treatment": [
+      "Inhaled corticosteroids for control",
+      "Rescue (bronchodilator) inhaler for flare-ups",
+      "Trigger avoidance (allergens, smoke)"
+    ],
+    "exercise_and_lifestyle": [
+      "Swimming (humid air is gentler on airways)",
+      "Walking",
+      "Breathing-focused yoga (pranayama)"
+    ],
+    "caution": "Always carry a rescue inhaler during exercise; warm up longer in cold, dry air."
+  },
+  {
+    "id": "copd",
+    "name": "COPD (Chronic Obstructive Pulmonary Disease)",
+    "aliases": [
+      "copd",
+      "chronic bronchitis",
+      "emphysema"
+    ],
+    "category": "Respiratory",
+    "symptoms": [
+      "Chronic cough",
+      "Shortness of breath",
+      "Wheezing",
+      "Frequent respiratory infections"
+    ],
+    "causes": [
+      "Long-term smoking (primary cause)",
+      "Long-term air pollutant exposure",
+      "Genetic factors (e.g. alpha-1 antitrypsin deficiency)"
+    ],
+    "curability": "Not curable and generally not reversible, but progression can be slowed and symptoms managed.",
+    "conventional_treatment": [
+      "Bronchodilator inhalers",
+      "Pulmonary rehabilitation program",
+      "Smoking cessation (most important step)",
+      "Oxygen therapy in advanced cases"
+    ],
+    "exercise_and_lifestyle": [
+      "Paced walking programs",
+      "Breathing exercises (pursed-lip breathing)",
+      "Supervised pulmonary rehab"
+    ],
+    "caution": "Exercise intensity should be built gradually and ideally guided by a pulmonary rehab specialist."
+  },
+  {
+    "id": "migraine",
+    "name": "Migraine",
+    "aliases": [
+      "migraine",
+      "severe headache",
+      "headaches",
+      "one sided headache"
+    ],
+    "category": "Neurological",
+    "symptoms": [
+      "Intense throbbing headache, often one-sided",
+      "Nausea",
+      "Sensitivity to light/sound",
+      "Sometimes visual aura"
+    ],
+    "causes": [
+      "Genetic predisposition",
+      "Hormonal changes",
+      "Certain foods or triggers",
+      "Stress",
+      "Sleep disruption"
+    ],
+    "curability": "Not curable, but frequency and severity are often well controlled with trigger management and medication.",
+    "conventional_treatment": [
+      "Triptans or other migraine-specific medication for acute attacks, as prescribed",
+      "Preventive medication for frequent migraines",
+      "Trigger identification and avoidance"
+    ],
+    "exercise_and_lifestyle": [
+      "Regular, moderate aerobic exercise (can reduce frequency)",
+      "Consistent sleep and meal schedule",
+      "Hydration"
+    ],
+    "caution": "Intense exercise can itself trigger a migraine in some people; build up gradually and stay hydrated."
+  },
+  {
+    "id": "gerd",
+    "name": "GERD (Acid Reflux)",
+    "aliases": [
+      "gerd",
+      "acid reflux",
+      "heartburn",
+      "gas problem",
+      "acidity",
+      "burning in chest after eating"
+    ],
+    "category": "Digestive",
+    "symptoms": [
+      "Heartburn",
+      "Regurgitation",
+      "Chest discomfort after eating",
+      "Chronic cough"
+    ],
+    "causes": [
+      "Weak lower esophageal sphincter",
+      "Obesity",
+      "Certain foods (spicy, fatty, caffeine)",
+      "Smoking"
+    ],
+    "curability": "Manageable and often well-controlled with lifestyle change and medication; rarely requires surgery.",
+    "conventional_treatment": [
+      "Antacids or proton pump inhibitors as prescribed",
+      "Smaller, earlier meals",
+      "Elevating the head of the bed"
+    ],
+    "exercise_and_lifestyle": [
+      "Walking after meals (light activity aids digestion)",
+      "Avoid exercising right after eating",
+      "Weight management"
+    ],
+    "caution": "Avoid exercises with heavy forward bending or intense core compression right after meals."
+  },
+  {
+    "id": "common-cold-flu",
+    "name": "Common Cold / Influenza",
+    "aliases": [
+      "common cold",
+      "flu",
+      "influenza",
+      "cold",
+      "fever",
+      "running nose",
+      "runny nose",
+      "body ache and fever"
+    ],
+    "category": "Infectious (viral)",
+    "symptoms": [
+      "Runny nose",
+      "Sore throat",
+      "Cough",
+      "Fatigue",
+      "Fever (more common in flu)"
+    ],
+    "causes": [
+      "Viral infection (rhinovirus, influenza virus, etc.)"
+    ],
+    "curability": "Self-limiting — resolves on its own; there is no cure, only supportive care and, for flu, sometimes antiviral medication if caught early.",
+    "conventional_treatment": [
+      "Rest and fluids",
+      "Over-the-counter symptom relief (as directed)",
+      "Antiviral medication for flu in some cases if prescribed early"
+    ],
+    "exercise_and_lifestyle": [
+      "Rest is prioritized over exercise during active illness",
+      "Light walking only once fever-free and energy returns"
+    ],
+    "caution": "Avoid exercising with a fever or chest symptoms; this can worsen illness or, rarely, affect the heart."
+  },
+  {
+    "id": "low-back-pain",
+    "name": "Low Back Pain / Sciatica",
+    "aliases": [
+      "back pain",
+      "sciatica",
+      "lower back pain",
+      "herniated disc",
+      "backache",
+      "back ache"
+    ],
+    "category": "Musculoskeletal",
+    "symptoms": [
+      "Localized or radiating pain",
+      "Numbness or tingling down the leg (sciatica)",
+      "Muscle stiffness"
+    ],
+    "causes": [
+      "Muscle strain",
+      "Disc herniation",
+      "Poor posture",
+      "Sedentary lifestyle"
+    ],
+    "curability": "Most cases resolve or improve significantly with time and conservative treatment; chronic cases are managed long-term.",
+    "conventional_treatment": [
+      "Physical therapy",
+      "Pain relief as advised by a doctor",
+      "Rarely, surgery for severe nerve compression"
+    ],
+    "exercise_and_lifestyle": [
+      "Core-strengthening exercises",
+      "Walking",
+      "Gentle stretching (e.g. cat-cow, hip flexor stretches)"
+    ],
+    "caution": "Avoid heavy lifting and high-impact activity during acute flare-ups; seek care urgently for loss of bladder/bowel control."
+  },
+  {
+    "id": "insomnia",
+    "name": "Insomnia",
+    "aliases": [
+      "insomnia",
+      "trouble sleeping",
+      "can't sleep",
+      "sleep problems",
+      "sleeplessness",
+      "not able to sleep"
+    ],
+    "category": "Sleep",
+    "symptoms": [
+      "Difficulty falling or staying asleep",
+      "Daytime fatigue",
+      "Irritability",
+      "Poor concentration"
+    ],
+    "causes": [
+      "Stress and anxiety",
+      "Poor sleep habits",
+      "Screen exposure before bed",
+      "Underlying medical conditions"
+    ],
+    "curability": "Often highly improvable through behavioral changes; chronic cases may need therapy (CBT-I) or short-term medication.",
+    "conventional_treatment": [
+      "Cognitive behavioral therapy for insomnia (CBT-I)",
+      "Sleep hygiene changes",
+      "Short-term sleep medication only if prescribed"
+    ],
+    "exercise_and_lifestyle": [
+      "Regular daytime exercise (not too close to bedtime)",
+      "Consistent sleep/wake schedule",
+      "Reduced screen time before bed"
+    ],
+    "caution": "Vigorous exercise too close to bedtime can sometimes delay sleep onset for some people."
+  },
+  {
+    "id": "hypothyroidism",
+    "name": "Hypothyroidism",
+    "aliases": [
+      "hypothyroidism",
+      "thyroid",
+      "underactive thyroid"
+    ],
+    "category": "Endocrine",
+    "symptoms": [
+      "Fatigue",
+      "Weight gain",
+      "Cold intolerance",
+      "Hair thinning",
+      "Depression-like symptoms"
+    ],
+    "causes": [
+      "Autoimmune thyroiditis (Hashimoto's)",
+      "Iodine deficiency",
+      "Prior thyroid surgery or radiation"
+    ],
+    "curability": "Not curable, but fully manageable with lifelong thyroid hormone replacement medication.",
+    "conventional_treatment": [
+      "Levothyroxine (thyroid hormone replacement) as prescribed, with regular blood testing"
+    ],
+    "exercise_and_lifestyle": [
+      "Moderate aerobic exercise as energy allows",
+      "Strength training to support metabolism",
+      "Consistent medication adherence"
+    ],
+    "caution": "Energy levels can be low untreated; exercise intensity should scale with how well the condition is currently controlled."
+  },
+  {
+    "id": "pcos",
+    "name": "PCOS (Polycystic Ovary Syndrome)",
+    "aliases": [
+      "pcos",
+      "polycystic ovary syndrome"
+    ],
+    "category": "Endocrine/Reproductive",
+    "symptoms": [
+      "Irregular periods",
+      "Weight gain",
+      "Acne",
+      "Excess hair growth",
+      "Insulin resistance"
+    ],
+    "causes": [
+      "Hormonal imbalance",
+      "Insulin resistance",
+      "Genetic predisposition"
+    ],
+    "curability": "Not curable, but symptoms are very manageable through lifestyle change and medication.",
+    "conventional_treatment": [
+      "Hormonal birth control or other medication as prescribed",
+      "Metformin for insulin resistance in some cases",
+      "Nutrition counseling"
+    ],
+    "exercise_and_lifestyle": [
+      "Combination of cardio and strength training (improves insulin sensitivity)",
+      "Consistent activity to support weight and hormone balance"
+    ],
+    "caution": "Individual response varies widely; track symptoms alongside a doctor rather than self-adjusting treatment."
+  },
+  {
+    "id": "seasonal-allergies",
+    "name": "Seasonal Allergies (Allergic Rhinitis)",
+    "aliases": [
+      "allergies",
+      "hay fever",
+      "allergic rhinitis",
+      "pollen allergy"
+    ],
+    "category": "Immune",
+    "symptoms": [
+      "Sneezing",
+      "Itchy/watery eyes",
+      "Runny or congested nose"
+    ],
+    "causes": [
+      "Pollen, dust, or other airborne allergens",
+      "Immune system overreaction"
+    ],
+    "curability": "Not curable, but very manageable with medication and allergen avoidance; immunotherapy can reduce sensitivity over years.",
+    "conventional_treatment": [
+      "Antihistamines as directed",
+      "Nasal corticosteroid sprays",
+      "Allergen immunotherapy (allergy shots) for long-term cases"
+    ],
+    "exercise_and_lifestyle": [
+      "Exercise indoors on high-pollen days",
+      "Shower after outdoor activity to remove pollen",
+      "Check pollen forecasts before outdoor workouts"
+    ],
+    "caution": "Uncontrolled allergy symptoms can worsen asthma if both conditions co-exist."
+  },
+  {
+    "id": "type1-diabetes",
+    "name": "Type 1 Diabetes",
+    "aliases": [
+      "type 1 diabetes",
+      "juvenile diabetes",
+      "insulin dependent diabetes",
+      "t1d"
+    ],
+    "category": "Metabolic",
+    "symptoms": [
+      "Extreme thirst",
+      "Frequent urination",
+      "Unexplained weight loss",
+      "Fatigue",
+      "Blurred vision"
+    ],
+    "causes": [
+      "Autoimmune destruction of insulin-producing cells",
+      "Genetic susceptibility"
+    ],
+    "curability": "Not curable; managed for life with insulin therapy and monitoring.",
+    "conventional_treatment": [
+      "Insulin therapy as prescribed",
+      "Continuous or frequent glucose monitoring",
+      "Carbohydrate counting with a dietitian"
+    ],
+    "exercise_and_lifestyle": [
+      "Regular moderate exercise with glucose checks before and after",
+      "Consistent meal timing",
+      "Carry fast-acting carbohydrate"
+    ],
+    "caution": "Exercise can cause low blood sugar; insulin adjustments must be guided by a doctor. Very high sugar with vomiting or confusion is an emergency."
+  },
+  {
+    "id": "high-cholesterol",
+    "name": "High Cholesterol (Hyperlipidemia)",
+    "aliases": [
+      "high cholesterol",
+      "cholesterol",
+      "hyperlipidemia",
+      "high ldl",
+      "triglycerides"
+    ],
+    "category": "Cardiovascular",
+    "symptoms": [
+      "Usually none (found on blood tests)",
+      "Fatty deposits around eyes or tendons in severe inherited cases"
+    ],
+    "causes": [
+      "Diet high in saturated fat",
+      "Obesity",
+      "Inactivity",
+      "Genetics (familial hypercholesterolemia)"
+    ],
+    "curability": "Not curable but very controllable, often improving substantially with lifestyle change.",
+    "conventional_treatment": [
+      "Statins or other lipid-lowering medication as prescribed",
+      "Diet lower in saturated and trans fats",
+      "Regular lipid blood tests"
+    ],
+    "exercise_and_lifestyle": [
+      "150 minutes/week of aerobic activity",
+      "Weight loss if overweight",
+      "Stop smoking",
+      "More fibre, fewer refined carbs"
+    ],
+    "caution": "Do not stop prescribed cholesterol medication without medical advice. Report unexplained muscle pain to your doctor."
+  },
+  {
+    "id": "heart-failure",
+    "name": "Heart Failure",
+    "aliases": [
+      "heart failure",
+      "congestive heart failure",
+      "weak heart",
+      "chf"
+    ],
+    "category": "Cardiovascular",
+    "symptoms": [
+      "Breathlessness",
+      "Leg or ankle swelling",
+      "Fatigue",
+      "Rapid weight gain from fluid",
+      "Needing extra pillows to sleep"
+    ],
+    "causes": [
+      "Coronary artery disease",
+      "Long-term high blood pressure",
+      "Heart attack damage",
+      "Cardiomyopathy"
+    ],
+    "curability": "Not curable; symptoms and progression can be controlled with treatment.",
+    "conventional_treatment": [
+      "ACE inhibitors, beta blockers, diuretics and related medicines as prescribed",
+      "Salt and fluid guidance",
+      "Cardiac rehabilitation",
+      "Devices or surgery in advanced cases"
+    ],
+    "exercise_and_lifestyle": [
+      "Supervised, gradual walking or cycling",
+      "Daily weight monitoring",
+      "Sodium reduction"
+    ],
+    "caution": "Exercise should be cleared by a cardiologist. Sudden breathlessness, chest pain or fainting needs urgent care."
+  },
+  {
+    "id": "atrial-fibrillation",
+    "name": "Atrial Fibrillation",
+    "aliases": [
+      "atrial fibrillation",
+      "afib",
+      "irregular heartbeat",
+      "palpitations"
+    ],
+    "category": "Cardiovascular",
+    "symptoms": [
+      "Irregular fluttering heartbeat",
+      "Palpitations",
+      "Dizziness",
+      "Breathlessness",
+      "Fatigue"
+    ],
+    "causes": [
+      "High blood pressure",
+      "Heart valve disease",
+      "Thyroid disease",
+      "Alcohol",
+      "Ageing"
+    ],
+    "curability": "Often manageable long term; some cases can be treated with procedures such as ablation.",
+    "conventional_treatment": [
+      "Rate or rhythm control medication",
+      "Blood thinners to reduce stroke risk as prescribed",
+      "Cardioversion or catheter ablation in selected cases"
+    ],
+    "exercise_and_lifestyle": [
+      "Moderate regular aerobic exercise once stable",
+      "Limit alcohol and caffeine if they trigger episodes",
+      "Weight and blood pressure control"
+    ],
+    "caution": "AF raises stroke risk; stroke signs (face droop, arm weakness, speech difficulty) need emergency care immediately."
+  },
+  {
+    "id": "stroke",
+    "name": "Stroke",
+    "aliases": [
+      "stroke",
+      "brain attack",
+      "face drooping",
+      "sudden weakness one side"
+    ],
+    "category": "Neurological",
+    "symptoms": [
+      "Sudden face drooping",
+      "Arm or leg weakness on one side",
+      "Slurred speech",
+      "Sudden confusion",
+      "Sudden vision loss",
+      "Severe sudden headache"
+    ],
+    "causes": [
+      "Blocked brain artery (ischaemic)",
+      "Burst blood vessel (haemorrhagic)",
+      "High blood pressure",
+      "AF",
+      "Smoking",
+      "Diabetes"
+    ],
+    "curability": "A medical emergency; recovery through rehabilitation varies. Prevention of a second stroke is key.",
+    "conventional_treatment": [
+      "Emergency clot-busting drugs or clot removal if treated within hours",
+      "Blood pressure, cholesterol and clot-prevention medicines",
+      "Physiotherapy, speech and occupational therapy"
+    ],
+    "exercise_and_lifestyle": [
+      "Rehabilitation-guided exercise",
+      "Blood pressure control",
+      "No smoking",
+      "Heart-healthy diet"
+    ],
+    "caution": "Call emergency services immediately if you suspect a stroke; every minute matters. Do not wait to see if symptoms pass."
+  },
+  {
+    "id": "anemia",
+    "name": "Anemia (Iron Deficiency)",
+    "aliases": [
+      "anemia",
+      "anaemia",
+      "iron deficiency",
+      "low hemoglobin",
+      "low haemoglobin"
+    ],
+    "category": "Blood",
+    "symptoms": [
+      "Tiredness",
+      "Pale skin",
+      "Shortness of breath",
+      "Dizziness",
+      "Cold hands and feet",
+      "Brittle nails"
+    ],
+    "causes": [
+      "Low iron intake",
+      "Blood loss (e.g. heavy periods)",
+      "Poor absorption",
+      "Pregnancy"
+    ],
+    "curability": "Usually curable once the cause is found and iron levels are restored.",
+    "conventional_treatment": [
+      "Iron supplements or iron-rich diet as advised after testing",
+      "Treating the underlying cause of blood loss",
+      "Vitamin B12 or folate if those are low"
+    ],
+    "exercise_and_lifestyle": [
+      "Iron-rich foods with vitamin C",
+      "Light activity, increasing as energy returns"
+    ],
+    "caution": "Do not self-treat with iron long term without testing; find the cause. Severe breathlessness or chest pain needs urgent care."
+  },
+  {
+    "id": "pneumonia",
+    "name": "Pneumonia",
+    "aliases": [
+      "pneumonia",
+      "lung infection",
+      "chest infection"
+    ],
+    "category": "Respiratory",
+    "symptoms": [
+      "Cough with phlegm",
+      "Fever and chills",
+      "Chest pain when breathing",
+      "Shortness of breath",
+      "Fatigue"
+    ],
+    "causes": [
+      "Bacterial, viral or fungal lung infection"
+    ],
+    "curability": "Usually curable; bacterial pneumonia responds to antibiotics prescribed by a doctor.",
+    "conventional_treatment": [
+      "Antibiotics for bacterial cases",
+      "Antivirals in some viral cases",
+      "Rest, fluids, oxygen if needed",
+      "Hospital care for severe cases"
+    ],
+    "exercise_and_lifestyle": [
+      "Rest during illness",
+      "Gentle walking and deep-breathing exercises during recovery",
+      "Vaccination (pneumococcal, flu) for prevention"
+    ],
+    "caution": "Difficulty breathing, blue lips, confusion or a very high fever need urgent care, especially in older adults and young children."
+  },
+  {
+    "id": "tuberculosis",
+    "name": "Tuberculosis (TB)",
+    "aliases": [
+      "tuberculosis",
+      "tb",
+      "persistent cough blood",
+      "lung tb"
+    ],
+    "category": "Infectious (bacterial)",
+    "symptoms": [
+      "Cough lasting over 3 weeks",
+      "Coughing blood",
+      "Night sweats",
+      "Weight loss",
+      "Fever",
+      "Fatigue"
+    ],
+    "causes": [
+      "Mycobacterium tuberculosis spread through the air"
+    ],
+    "curability": "Curable with a full course of combination antibiotics taken exactly as prescribed.",
+    "conventional_treatment": [
+      "Multi-drug anti-TB regimen for about 6 months or longer under supervision",
+      "Contact tracing",
+      "Nutritional support"
+    ],
+    "exercise_and_lifestyle": [
+      "Rest and good nutrition",
+      "Light activity as strength returns",
+      "Ventilated living spaces"
+    ],
+    "caution": "Never stop TB treatment early, as this causes drug-resistant TB. See a doctor promptly for a cough lasting over 3 weeks."
+  },
+  {
+    "id": "covid19",
+    "name": "COVID-19",
+    "aliases": [
+      "covid",
+      "covid-19",
+      "coronavirus",
+      "sars-cov-2"
+    ],
+    "category": "Infectious (viral)",
+    "symptoms": [
+      "Fever",
+      "Cough",
+      "Sore throat",
+      "Loss of smell or taste",
+      "Fatigue",
+      "Body aches",
+      "Breathlessness"
+    ],
+    "causes": [
+      "SARS-CoV-2 virus"
+    ],
+    "curability": "Usually self-limiting in healthy people; antivirals are available for higher-risk patients.",
+    "conventional_treatment": [
+      "Rest and fluids",
+      "Antiviral treatment for high-risk patients if started early, as prescribed",
+      "Hospital care for severe illness",
+      "Vaccination"
+    ],
+    "exercise_and_lifestyle": [
+      "Rest until fever-free and recovering",
+      "Return to exercise gradually after recovery",
+      "Isolate to protect others"
+    ],
+    "caution": "Difficulty breathing, persistent chest pain, confusion or blue lips need emergency care."
+  },
+  {
+    "id": "acute-bronchitis",
+    "name": "Acute Bronchitis",
+    "aliases": [
+      "bronchitis",
+      "chest cold",
+      "persistent cough",
+      "productive cough"
+    ],
+    "category": "Respiratory",
+    "symptoms": [
+      "Cough with mucus",
+      "Sore chest",
+      "Mild fever",
+      "Wheeze",
+      "Fatigue"
+    ],
+    "causes": [
+      "Usually a viral infection of the airways; sometimes irritants such as smoke"
+    ],
+    "curability": "Usually resolves on its own in 1-3 weeks; antibiotics rarely needed.",
+    "conventional_treatment": [
+      "Rest and fluids",
+      "Honey or warm drinks for cough relief",
+      "Inhalers if wheezy, as prescribed",
+      "Antibiotics only if bacterial infection is suspected by a doctor"
+    ],
+    "exercise_and_lifestyle": [
+      "Avoid smoke",
+      "Gentle walking once energy returns"
+    ],
+    "caution": "A cough lasting over 3 weeks, coughing blood, or breathing difficulty needs medical review."
+  },
+  {
+    "id": "sinusitis",
+    "name": "Sinusitis",
+    "aliases": [
+      "sinusitis",
+      "sinus infection",
+      "blocked sinuses",
+      "sinus pain",
+      "facial pain congestion"
+    ],
+    "category": "ENT",
+    "symptoms": [
+      "Facial pressure or pain",
+      "Blocked nose",
+      "Thick nasal discharge",
+      "Reduced smell",
+      "Headache"
+    ],
+    "causes": [
+      "Viral infection",
+      "Allergies",
+      "Bacterial infection",
+      "Nasal polyps"
+    ],
+    "curability": "Most acute cases clear on their own; chronic cases are manageable.",
+    "conventional_treatment": [
+      "Saline nasal rinses",
+      "Steam inhalation",
+      "Nasal steroid sprays as directed",
+      "Antibiotics only if bacterial, prescribed by a doctor"
+    ],
+    "exercise_and_lifestyle": [
+      "Hydration",
+      "Light walking is fine if you feel able",
+      "Avoid known allergens"
+    ],
+    "caution": "Swelling around the eyes, severe headache, high fever or vision changes need urgent review."
+  },
+  {
+    "id": "strep-throat",
+    "name": "Strep Throat / Tonsillitis",
+    "aliases": [
+      "strep throat",
+      "tonsillitis",
+      "sore throat",
+      "swollen tonsils"
+    ],
+    "category": "ENT",
+    "symptoms": [
+      "Painful swallowing",
+      "Red swollen tonsils",
+      "Fever",
+      "Swollen neck glands"
+    ],
+    "causes": [
+      "Group A Streptococcus bacteria or viruses"
+    ],
+    "curability": "Bacterial strep throat is curable with antibiotics prescribed by a doctor; viral cases resolve on their own.",
+    "conventional_treatment": [
+      "Throat swab test",
+      "Antibiotics if strep is confirmed",
+      "Pain relief and fluids",
+      "Warm salt-water gargles"
+    ],
+    "exercise_and_lifestyle": [
+      "Rest",
+      "Avoid strenuous exercise until fever has settled",
+      "Finish any prescribed antibiotics"
+    ],
+    "caution": "Difficulty breathing, drooling or inability to swallow needs urgent care."
+  },
+  {
+    "id": "uti",
+    "name": "Urinary Tract Infection (UTI)",
+    "aliases": [
+      "uti",
+      "urinary tract infection",
+      "burning urination",
+      "bladder infection",
+      "cystitis"
+    ],
+    "category": "Urinary",
+    "symptoms": [
+      "Burning when urinating",
+      "Frequent urge to urinate",
+      "Cloudy or strong-smelling urine",
+      "Lower abdominal discomfort"
+    ],
+    "causes": [
+      "Bacteria, commonly E. coli, entering the urinary tract"
+    ],
+    "curability": "Usually curable with a short antibiotic course prescribed by a doctor.",
+    "conventional_treatment": [
+      "Urine test",
+      "Antibiotics as prescribed",
+      "Plenty of fluids",
+      "Pain relief"
+    ],
+    "exercise_and_lifestyle": [
+      "Drink water regularly",
+      "Urinate after intercourse",
+      "Avoid holding urine"
+    ],
+    "caution": "Fever, back or flank pain, vomiting or blood in urine suggests kidney involvement and needs prompt care."
+  },
+  {
+    "id": "kidney-stones",
+    "name": "Kidney Stones",
+    "aliases": [
+      "kidney stones",
+      "renal colic",
+      "kidney stone",
+      "flank pain"
+    ],
+    "category": "Urinary",
+    "symptoms": [
+      "Severe pain in side or back",
+      "Pain spreading to the groin",
+      "Blood in urine",
+      "Nausea",
+      "Frequent urge to urinate"
+    ],
+    "causes": [
+      "Dehydration",
+      "High salt or oxalate diet",
+      "Family history",
+      "Certain metabolic conditions"
+    ],
+    "curability": "Small stones often pass on their own; larger stones can be removed with procedures.",
+    "conventional_treatment": [
+      "Pain relief",
+      "Increased fluids",
+      "Medication to help stones pass in some cases",
+      "Shockwave lithotripsy or ureteroscopy for large stones"
+    ],
+    "exercise_and_lifestyle": [
+      "Drink enough fluid for pale urine",
+      "Reduce salt",
+      "Moderate animal protein"
+    ],
+    "caution": "Fever with pain, or being unable to pass urine, is an emergency."
+  },
+  {
+    "id": "chronic-kidney-disease",
+    "name": "Chronic Kidney Disease",
+    "aliases": [
+      "chronic kidney disease",
+      "ckd",
+      "kidney failure",
+      "kidney disease",
+      "renal failure"
+    ],
+    "category": "Urinary",
+    "symptoms": [
+      "Often none early",
+      "Fatigue",
+      "Swollen ankles",
+      "Foamy urine",
+      "Nausea",
+      "Itching"
+    ],
+    "causes": [
+      "Diabetes",
+      "High blood pressure",
+      "Glomerulonephritis",
+      "Polycystic kidney disease"
+    ],
+    "curability": "Not curable; progression can be slowed, and advanced disease is treated with dialysis or transplant.",
+    "conventional_treatment": [
+      "Tight blood pressure and blood sugar control",
+      "ACE inhibitors or ARBs as prescribed",
+      "Diet guidance on salt, protein and potassium",
+      "Dialysis or transplant in end-stage disease"
+    ],
+    "exercise_and_lifestyle": [
+      "Regular light to moderate exercise",
+      "Avoid NSAID painkillers unless advised",
+      "No smoking"
+    ],
+    "caution": "Ask your kidney doctor before taking any new medicine or supplement, as many are cleared by the kidneys."
+  },
+  {
+    "id": "gastroenteritis",
+    "name": "Gastroenteritis (Stomach Flu / Food Poisoning)",
+    "aliases": [
+      "gastroenteritis",
+      "stomach flu",
+      "food poisoning",
+      "vomiting and diarrhea",
+      "stomach bug"
+    ],
+    "category": "Digestive",
+    "symptoms": [
+      "Vomiting",
+      "Watery diarrhoea",
+      "Stomach cramps",
+      "Low-grade fever",
+      "Dehydration"
+    ],
+    "causes": [
+      "Viruses such as norovirus",
+      "Contaminated food or water",
+      "Bacteria"
+    ],
+    "curability": "Usually self-limiting within a few days; rehydration is the main treatment.",
+    "conventional_treatment": [
+      "Oral rehydration solution",
+      "Small frequent sips of fluid",
+      "Gradual return to bland food",
+      "Antibiotics only for specific bacterial causes, prescribed by a doctor"
+    ],
+    "exercise_and_lifestyle": [
+      "Rest",
+      "Hand washing",
+      "Avoid exercise until recovered and fully hydrated"
+    ],
+    "caution": "Blood in stool, high fever, signs of dehydration (dizziness, very little urine) or symptoms lasting over 3 days need medical care."
+  },
+  {
+    "id": "ibs",
+    "name": "Irritable Bowel Syndrome (IBS)",
+    "aliases": [
+      "ibs",
+      "irritable bowel syndrome",
+      "bloating and cramps",
+      "spastic colon"
+    ],
+    "category": "Digestive",
+    "symptoms": [
+      "Abdominal pain",
+      "Bloating",
+      "Diarrhoea or constipation or both",
+      "Relief after passing stool"
+    ],
+    "causes": [
+      "Gut-brain interaction problems",
+      "Stress",
+      "Food triggers",
+      "Gut infection history"
+    ],
+    "curability": "Not curable but usually well controlled with diet and lifestyle changes.",
+    "conventional_treatment": [
+      "Trigger-food identification, sometimes a low-FODMAP diet with a dietitian",
+      "Fibre adjustment",
+      "Antispasmodics or other medicines as prescribed",
+      "Stress management or gut-directed therapy"
+    ],
+    "exercise_and_lifestyle": [
+      "Regular moderate exercise (walking, yoga) reduces symptoms",
+      "Regular meal times",
+      "Stress reduction"
+    ],
+    "caution": "Blood in stool, unexplained weight loss or night-time symptoms are not typical of IBS and need medical review."
+  },
+  {
+    "id": "peptic-ulcer",
+    "name": "Peptic Ulcer",
+    "aliases": [
+      "peptic ulcer",
+      "stomach ulcer",
+      "gastric ulcer",
+      "duodenal ulcer",
+      "h pylori"
+    ],
+    "category": "Digestive",
+    "symptoms": [
+      "Burning stomach pain",
+      "Bloating",
+      "Nausea",
+      "Pain that changes with meals",
+      "Dark stools in complications"
+    ],
+    "causes": [
+      "H. pylori infection",
+      "Long-term NSAID use",
+      "Excess stomach acid"
+    ],
+    "curability": "Usually curable, especially when H. pylori is eradicated.",
+    "conventional_treatment": [
+      "Antibiotics plus acid-reducing medicine for H. pylori as prescribed",
+      "Proton pump inhibitors",
+      "Stopping NSAIDs where possible"
+    ],
+    "exercise_and_lifestyle": [
+      "Avoid smoking and heavy alcohol",
+      "Regular meals",
+      "Light activity is fine"
+    ],
+    "caution": "Vomiting blood, black tarry stools or sudden severe abdominal pain are emergencies."
+  },
+  {
+    "id": "constipation",
+    "name": "Constipation",
+    "aliases": [
+      "constipation",
+      "hard stools",
+      "difficulty passing stool",
+      "irregular bowel"
+    ],
+    "category": "Digestive",
+    "symptoms": [
+      "Fewer than 3 bowel movements a week",
+      "Hard stools",
+      "Straining",
+      "Bloating"
+    ],
+    "causes": [
+      "Low fibre",
+      "Dehydration",
+      "Inactivity",
+      "Some medications",
+      "Slow gut transit"
+    ],
+    "curability": "Usually easily managed with diet and lifestyle changes.",
+    "conventional_treatment": [
+      "More dietary fibre and fluids",
+      "Osmotic or bulk laxatives as advised",
+      "Review of causative medicines with a doctor"
+    ],
+    "exercise_and_lifestyle": [
+      "Daily walking",
+      "Regular toilet routine",
+      "Respond promptly to the urge to go"
+    ],
+    "caution": "New constipation with blood, weight loss or severe pain, especially over 50, needs medical review."
+  },
+  {
+    "id": "diarrhea",
+    "name": "Diarrhea",
+    "aliases": [
+      "diarrhea",
+      "diarrhoea",
+      "loose motions",
+      "loose stools",
+      "watery stools",
+      "loose motion"
+    ],
+    "category": "Digestive",
+    "symptoms": [
+      "Frequent loose or watery stools",
+      "Cramps",
+      "Urgency",
+      "Dehydration"
+    ],
+    "causes": [
+      "Viral or bacterial infection",
+      "Food intolerance",
+      "Medications",
+      "IBS"
+    ],
+    "curability": "Usually short-lived and self-limiting; rehydration is the priority.",
+    "conventional_treatment": [
+      "Oral rehydration solution",
+      "Continue eating bland foods",
+      "Anti-diarrhoeal medicines only when appropriate and advised",
+      "Treat underlying cause"
+    ],
+    "exercise_and_lifestyle": [
+      "Rest",
+      "Hand hygiene",
+      "Avoid strenuous exercise until recovered"
+    ],
+    "caution": "Blood in stool, fever, severe dehydration or diarrhoea lasting more than a few days needs medical care, especially in children and older adults."
+  },
+  {
+    "id": "viral-hepatitis",
+    "name": "Viral Hepatitis (A, B, C)",
+    "aliases": [
+      "hepatitis",
+      "hepatitis a",
+      "hepatitis b",
+      "hepatitis c",
+      "jaundice",
+      "liver infection"
+    ],
+    "category": "Infectious (viral)",
+    "symptoms": [
+      "Yellowing of skin and eyes",
+      "Dark urine",
+      "Fatigue",
+      "Nausea",
+      "Abdominal pain",
+      "Often no symptoms in chronic B and C"
+    ],
+    "causes": [
+      "Hepatitis viruses spread by contaminated food or water (A) or blood and body fluids (B, C)"
+    ],
+    "curability": "Hepatitis A resolves on its own; hepatitis C is now usually curable with antivirals; hepatitis B is controllable.",
+    "conventional_treatment": [
+      "Rest and supportive care (A)",
+      "Direct-acting antivirals for hepatitis C",
+      "Long-term antiviral therapy for chronic hepatitis B",
+      "Vaccination for A and B"
+    ],
+    "exercise_and_lifestyle": [
+      "Avoid alcohol",
+      "Light activity as energy allows",
+      "Safe food and water, safe sex, no sharing needles"
+    ],
+    "caution": "Confusion, vomiting blood or severe abdominal swelling need emergency care."
+  },
+  {
+    "id": "fatty-liver",
+    "name": "Fatty Liver Disease (NAFLD)",
+    "aliases": [
+      "fatty liver",
+      "nafld",
+      "masld",
+      "liver fat",
+      "fatty liver disease"
+    ],
+    "category": "Digestive",
+    "symptoms": [
+      "Often none",
+      "Fatigue",
+      "Vague upper right abdominal discomfort"
+    ],
+    "causes": [
+      "Obesity",
+      "Insulin resistance",
+      "High triglycerides",
+      "Sedentary lifestyle"
+    ],
+    "curability": "Often reversible in early stages through weight loss and lifestyle change.",
+    "conventional_treatment": [
+      "Gradual weight loss of 7-10% of body weight",
+      "Diabetes and cholesterol control",
+      "Regular liver monitoring"
+    ],
+    "exercise_and_lifestyle": [
+      "150+ minutes of aerobic exercise weekly plus resistance training",
+      "Cut sugary drinks and refined carbs",
+      "Limit alcohol"
+    ],
+    "caution": "Avoid crash diets; rapid weight loss can worsen liver inflammation. See a doctor if there is yellowing of the skin or abdominal swelling."
+  },
+  {
+    "id": "gallstones",
+    "name": "Gallstones",
+    "aliases": [
+      "gallstones",
+      "gall stones",
+      "gallbladder pain",
+      "biliary colic",
+      "cholecystitis"
+    ],
+    "category": "Digestive",
+    "symptoms": [
+      "Sudden pain in upper right abdomen",
+      "Pain after fatty meals",
+      "Nausea",
+      "Sometimes jaundice"
+    ],
+    "causes": [
+      "Cholesterol imbalance in bile",
+      "Rapid weight loss",
+      "Obesity",
+      "Female sex and age"
+    ],
+    "curability": "Symptomatic gallstones are usually cured by removing the gallbladder; it is not needed to live normally.",
+    "conventional_treatment": [
+      "Ultrasound diagnosis",
+      "Laparoscopic gallbladder removal",
+      "Low-fat diet while awaiting treatment"
+    ],
+    "exercise_and_lifestyle": [
+      "Gradual weight loss",
+      "Regular moderate exercise",
+      "Avoid very low-calorie crash diets"
+    ],
+    "caution": "Fever with abdominal pain, or jaundice, needs urgent care as it may signal infection or a blocked bile duct."
+  },
+  {
+    "id": "appendicitis",
+    "name": "Appendicitis",
+    "aliases": [
+      "appendicitis",
+      "appendix pain",
+      "right lower abdominal pain"
+    ],
+    "category": "Digestive",
+    "symptoms": [
+      "Pain starting near the navel and moving to lower right abdomen",
+      "Loss of appetite",
+      "Nausea",
+      "Fever"
+    ],
+    "causes": [
+      "Blockage and infection of the appendix"
+    ],
+    "curability": "Curable with surgery to remove the appendix; it is a medical emergency.",
+    "conventional_treatment": [
+      "Urgent surgical removal (appendectomy)",
+      "Antibiotics before or after surgery",
+      "Fluids and pain relief in hospital"
+    ],
+    "exercise_and_lifestyle": [
+      "Gradual return to activity after surgery as advised by the surgeon"
+    ],
+    "caution": "Seek emergency care right away for suspected appendicitis. A ruptured appendix is life-threatening."
+  },
+  {
+    "id": "celiac-disease",
+    "name": "Celiac Disease",
+    "aliases": [
+      "celiac",
+      "coeliac",
+      "gluten intolerance",
+      "gluten allergy"
+    ],
+    "category": "Digestive",
+    "symptoms": [
+      "Diarrhoea",
+      "Bloating",
+      "Weight loss",
+      "Fatigue",
+      "Anaemia",
+      "Skin rash"
+    ],
+    "causes": [
+      "Autoimmune reaction to gluten"
+    ],
+    "curability": "Not curable but fully controlled by a strict lifelong gluten-free diet.",
+    "conventional_treatment": [
+      "Blood tests and biopsy for diagnosis",
+      "Strict gluten-free diet",
+      "Vitamin and mineral supplements if deficient"
+    ],
+    "exercise_and_lifestyle": [
+      "Regular exercise supports bone health",
+      "Read food labels carefully"
+    ],
+    "caution": "Do not start a gluten-free diet before testing, as it can hide the diagnosis."
+  },
+  {
+    "id": "lactose-intolerance",
+    "name": "Lactose Intolerance",
+    "aliases": [
+      "lactose intolerance",
+      "milk intolerance",
+      "dairy intolerance",
+      "cannot digest milk"
+    ],
+    "category": "Digestive",
+    "symptoms": [
+      "Bloating",
+      "Gas",
+      "Diarrhoea",
+      "Cramps after dairy"
+    ],
+    "causes": [
+      "Low levels of the lactase enzyme"
+    ],
+    "curability": "Not curable but easily managed by adjusting dairy intake.",
+    "conventional_treatment": [
+      "Reduce or avoid lactose",
+      "Lactase enzyme supplements",
+      "Lactose-free dairy products",
+      "Ensure calcium from other sources"
+    ],
+    "exercise_and_lifestyle": [
+      "Small amounts of dairy are often tolerated",
+      "Maintain calcium and vitamin D intake"
+    ],
+    "caution": "Persistent symptoms unrelated to dairy should be checked by a doctor."
+  },
+  {
+    "id": "malaria",
+    "name": "Malaria",
+    "aliases": [
+      "malaria",
+      "mosquito fever",
+      "fever with chills and sweats"
+    ],
+    "category": "Infectious (parasitic)",
+    "symptoms": [
+      "Fever with chills",
+      "Sweating",
+      "Headache",
+      "Muscle aches",
+      "Nausea",
+      "Fatigue"
+    ],
+    "causes": [
+      "Plasmodium parasites spread by Anopheles mosquitoes"
+    ],
+    "curability": "Curable with prompt antimalarial treatment prescribed by a doctor.",
+    "conventional_treatment": [
+      "Blood test for diagnosis",
+      "Antimalarial medicines matched to the parasite type",
+      "Hospital care for severe malaria"
+    ],
+    "exercise_and_lifestyle": [
+      "Rest during illness",
+      "Prevention: mosquito nets, repellents, preventive medicines when travelling"
+    ],
+    "caution": "Malaria can become life-threatening within days; seek urgent testing for fever after being in a malaria area."
+  },
+  {
+    "id": "dengue",
+    "name": "Dengue Fever",
+    "aliases": [
+      "dengue",
+      "dengue fever",
+      "breakbone fever",
+      "platelet count low"
+    ],
+    "category": "Infectious (viral)",
+    "symptoms": [
+      "High fever",
+      "Severe headache",
+      "Pain behind the eyes",
+      "Joint and muscle pain",
+      "Rash",
+      "Nausea"
+    ],
+    "causes": [
+      "Dengue virus spread by Aedes mosquitoes"
+    ],
+    "curability": "No specific antiviral; most people recover with supportive care.",
+    "conventional_treatment": [
+      "Rest and plenty of fluids",
+      "Paracetamol for fever as directed (avoid aspirin and NSAIDs)",
+      "Monitoring of blood counts",
+      "Hospital care for severe dengue"
+    ],
+    "exercise_and_lifestyle": [
+      "Complete rest during illness",
+      "Avoid mosquito bites",
+      "Remove standing water"
+    ],
+    "caution": "Severe abdominal pain, persistent vomiting, bleeding gums, or drowsiness after fever settles are warning signs needing immediate hospital care."
+  },
+  {
+    "id": "typhoid",
+    "name": "Typhoid Fever",
+    "aliases": [
+      "typhoid",
+      "enteric fever",
+      "salmonella typhi"
+    ],
+    "category": "Infectious (bacterial)",
+    "symptoms": [
+      "Prolonged high fever",
+      "Weakness",
+      "Stomach pain",
+      "Headache",
+      "Constipation or diarrhoea"
+    ],
+    "causes": [
+      "Salmonella Typhi from contaminated food or water"
+    ],
+    "curability": "Curable with antibiotics prescribed by a doctor.",
+    "conventional_treatment": [
+      "Blood culture diagnosis",
+      "Antibiotics as prescribed",
+      "Fluids and rest",
+      "Typhoid vaccination for prevention"
+    ],
+    "exercise_and_lifestyle": [
+      "Rest",
+      "Safe drinking water",
+      "Careful hand and food hygiene"
+    ],
+    "caution": "Complete the whole antibiotic course. Severe abdominal pain or bleeding needs emergency care."
+  },
+  {
+    "id": "chickenpox",
+    "name": "Chickenpox",
+    "aliases": [
+      "chickenpox",
+      "chicken pox",
+      "varicella"
+    ],
+    "category": "Infectious (viral)",
+    "symptoms": [
+      "Itchy blister-like rash",
+      "Fever",
+      "Tiredness",
+      "Loss of appetite"
+    ],
+    "causes": [
+      "Varicella-zoster virus"
+    ],
+    "curability": "Usually mild and self-limiting; vaccination prevents it.",
+    "conventional_treatment": [
+      "Rest and fluids",
+      "Calamine or cooling lotions for itch",
+      "Antihistamines as advised",
+      "Antivirals for high-risk patients if prescribed early"
+    ],
+    "exercise_and_lifestyle": [
+      "Keep nails short",
+      "Stay home until all blisters have crusted",
+      "Avoid contact with pregnant women and newborns"
+    ],
+    "caution": "Avoid aspirin in children. Seek care for breathing difficulty, confusion or spreading redness."
+  },
+  {
+    "id": "measles",
+    "name": "Measles",
+    "aliases": [
+      "measles",
+      "rubeola",
+      "red rash and fever"
+    ],
+    "category": "Infectious (viral)",
+    "symptoms": [
+      "High fever",
+      "Cough",
+      "Runny nose",
+      "Red eyes",
+      "Rash spreading from face downward"
+    ],
+    "causes": [
+      "Measles virus, highly contagious"
+    ],
+    "curability": "No specific cure; most recover with supportive care, and the MMR vaccine prevents it.",
+    "conventional_treatment": [
+      "Rest and fluids",
+      "Fever control",
+      "Vitamin A in some settings under medical advice",
+      "Hospital care for complications"
+    ],
+    "exercise_and_lifestyle": [
+      "Isolate while infectious",
+      "Ensure MMR vaccination is up to date"
+    ],
+    "caution": "Complications like pneumonia and encephalitis can be serious; seek care for breathing trouble, seizures or drowsiness."
+  },
+  {
+    "id": "conjunctivitis",
+    "name": "Conjunctivitis (Pink Eye)",
+    "aliases": [
+      "conjunctivitis",
+      "pink eye",
+      "red eye",
+      "eye infection",
+      "watery eyes discharge"
+    ],
+    "category": "Eye",
+    "symptoms": [
+      "Red eye",
+      "Gritty feeling",
+      "Watery or sticky discharge",
+      "Eyelids stuck together in morning"
+    ],
+    "causes": [
+      "Viral or bacterial infection",
+      "Allergy",
+      "Irritants"
+    ],
+    "curability": "Usually resolves on its own; bacterial cases may need antibiotic drops from a doctor.",
+    "conventional_treatment": [
+      "Clean discharge with a clean, damp cloth",
+      "Antibiotic drops if bacterial, as prescribed",
+      "Antihistamine drops for allergic cases"
+    ],
+    "exercise_and_lifestyle": [
+      "Avoid touching or rubbing eyes",
+      "Wash hands often",
+      "Do not share towels",
+      "Avoid contact lenses until healed"
+    ],
+    "caution": "Eye pain, reduced vision or sensitivity to light needs urgent eye assessment."
+  },
+  {
+    "id": "eczema",
+    "name": "Eczema (Atopic Dermatitis)",
+    "aliases": [
+      "eczema",
+      "atopic dermatitis",
+      "itchy dry skin",
+      "skin rash itchy"
+    ],
+    "category": "Skin",
+    "symptoms": [
+      "Dry itchy skin",
+      "Red inflamed patches",
+      "Skin thickening from scratching",
+      "Flare-ups"
+    ],
+    "causes": [
+      "Skin barrier weakness",
+      "Allergies",
+      "Genetics",
+      "Irritants"
+    ],
+    "curability": "Not curable but well controlled; many children outgrow it.",
+    "conventional_treatment": [
+      "Regular emollients (moisturisers)",
+      "Topical corticosteroids or other creams as prescribed",
+      "Antihistamines for itch at night",
+      "Trigger avoidance"
+    ],
+    "exercise_and_lifestyle": [
+      "Short lukewarm showers",
+      "Fragrance-free soaps",
+      "Cotton clothing",
+      "Manage stress"
+    ],
+    "caution": "Weeping, crusted or painful skin may be infected and needs a doctor."
+  },
+  {
+    "id": "psoriasis",
+    "name": "Psoriasis",
+    "aliases": [
+      "psoriasis",
+      "scaly skin patches",
+      "silvery scales"
+    ],
+    "category": "Skin",
+    "symptoms": [
+      "Red patches with silvery scales",
+      "Dry cracked skin",
+      "Itching",
+      "Nail changes",
+      "Joint pain in psoriatic arthritis"
+    ],
+    "causes": [
+      "Immune system overactivity",
+      "Genetics",
+      "Stress and infections as triggers"
+    ],
+    "curability": "Not curable but usually well controlled with treatment.",
+    "conventional_treatment": [
+      "Topical treatments (steroids, vitamin D analogues)",
+      "Phototherapy",
+      "Systemic or biologic medicines for moderate to severe cases"
+    ],
+    "exercise_and_lifestyle": [
+      "Regular exercise and weight control help",
+      "Moisturise daily",
+      "Limit alcohol and stop smoking"
+    ],
+    "caution": "Joint pain and stiffness with psoriasis should be assessed for psoriatic arthritis."
+  },
+  {
+    "id": "acne",
+    "name": "Acne",
+    "aliases": [
+      "acne",
+      "pimples",
+      "breakouts",
+      "zits"
+    ],
+    "category": "Skin",
+    "symptoms": [
+      "Blackheads and whiteheads",
+      "Red pimples",
+      "Deeper painful cysts",
+      "Scarring"
+    ],
+    "causes": [
+      "Excess oil",
+      "Clogged pores",
+      "Bacteria",
+      "Hormonal changes"
+    ],
+    "curability": "Highly treatable; most cases can be cleared or greatly improved.",
+    "conventional_treatment": [
+      "Topical retinoids, benzoyl peroxide or antibiotics",
+      "Oral antibiotics or hormonal treatment for moderate cases",
+      "Isotretinoin for severe acne under specialist care"
+    ],
+    "exercise_and_lifestyle": [
+      "Gentle cleansing twice daily",
+      "Do not pick or squeeze",
+      "Regular exercise, then wash after sweating"
+    ],
+    "caution": "Severe or scarring acne should be treated early by a doctor or dermatologist."
+  },
+  {
+    "id": "fungal-skin",
+    "name": "Fungal Skin Infection (Ringworm / Athlete's Foot)",
+    "aliases": [
+      "ringworm",
+      "athlete's foot",
+      "fungal infection",
+      "tinea",
+      "jock itch",
+      "fungal skin"
+    ],
+    "category": "Skin",
+    "symptoms": [
+      "Ring-shaped red itchy patches",
+      "Peeling between toes",
+      "Itching",
+      "Scaly skin"
+    ],
+    "causes": [
+      "Dermatophyte fungi thriving in warm, moist areas"
+    ],
+    "curability": "Curable with antifungal treatment.",
+    "conventional_treatment": [
+      "Topical antifungal creams",
+      "Oral antifungals for widespread or nail infections as prescribed"
+    ],
+    "exercise_and_lifestyle": [
+      "Keep skin dry",
+      "Change socks daily",
+      "Do not share towels",
+      "Wear breathable footwear"
+    ],
+    "caution": "Continue treatment for the full recommended period even after the rash fades."
+  },
+  {
+    "id": "scabies",
+    "name": "Scabies",
+    "aliases": [
+      "scabies",
+      "itching worse at night",
+      "mite infestation"
+    ],
+    "category": "Skin",
+    "symptoms": [
+      "Intense itching, worse at night",
+      "Tiny burrows or bumps between fingers",
+      "Rash"
+    ],
+    "causes": [
+      "Sarcoptes scabiei mites spread by close contact"
+    ],
+    "curability": "Curable with prescribed anti-scabies treatment for the patient and close contacts.",
+    "conventional_treatment": [
+      "Prescription scabicide cream or tablets",
+      "Treat all household contacts at the same time",
+      "Wash bedding and clothes in hot water"
+    ],
+    "exercise_and_lifestyle": [
+      "Avoid skin-to-skin contact until treated",
+      "Itching may continue for weeks after treatment"
+    ],
+    "caution": "See a doctor rather than guessing, since other skin conditions can look similar."
+  },
+  {
+    "id": "hives",
+    "name": "Urticaria (Hives)",
+    "aliases": [
+      "hives",
+      "urticaria",
+      "allergic rash",
+      "welts"
+    ],
+    "category": "Immune",
+    "symptoms": [
+      "Raised itchy welts",
+      "Swelling of lips or eyelids",
+      "Rash that comes and goes"
+    ],
+    "causes": [
+      "Allergic reactions",
+      "Infections",
+      "Medicines",
+      "Stress",
+      "Often unknown"
+    ],
+    "curability": "Acute hives usually settle in days to weeks; chronic hives are manageable.",
+    "conventional_treatment": [
+      "Non-drowsy antihistamines as directed",
+      "Avoiding known triggers",
+      "Specialist treatment for chronic hives"
+    ],
+    "exercise_and_lifestyle": [
+      "Cool compresses",
+      "Loose clothing",
+      "Keep a trigger diary"
+    ],
+    "caution": "Swelling of the tongue or throat, wheeze or dizziness is an emergency (possible anaphylaxis)."
+  },
+  {
+    "id": "rheumatoid-arthritis",
+    "name": "Rheumatoid Arthritis",
+    "aliases": [
+      "rheumatoid arthritis",
+      "ra",
+      "autoimmune arthritis",
+      "morning stiffness joints"
+    ],
+    "category": "Musculoskeletal",
+    "symptoms": [
+      "Swollen painful joints",
+      "Morning stiffness over 30 minutes",
+      "Fatigue",
+      "Symmetrical joint involvement"
+    ],
+    "causes": [
+      "Autoimmune attack on joint lining",
+      "Genetics",
+      "Smoking"
+    ],
+    "curability": "Not curable, but early treatment can produce remission and prevent joint damage.",
+    "conventional_treatment": [
+      "Disease-modifying drugs (DMARDs) and biologics as prescribed by a rheumatologist",
+      "Short-term anti-inflammatory medicines",
+      "Physiotherapy"
+    ],
+    "exercise_and_lifestyle": [
+      "Low-impact exercise like swimming and cycling",
+      "Gentle range-of-motion work",
+      "Stop smoking"
+    ],
+    "caution": "Early specialist treatment matters; joint damage can be permanent if untreated."
+  },
+  {
+    "id": "gout",
+    "name": "Gout",
+    "aliases": [
+      "gout",
+      "uric acid",
+      "swollen big toe",
+      "high uric acid"
+    ],
+    "category": "Musculoskeletal",
+    "symptoms": [
+      "Sudden severe joint pain, often the big toe",
+      "Redness and swelling",
+      "Heat in the joint"
+    ],
+    "causes": [
+      "High uric acid forming crystals in joints",
+      "Diet high in purines and alcohol",
+      "Kidney issues"
+    ],
+    "curability": "Not curable but well controlled with treatment and lifestyle change.",
+    "conventional_treatment": [
+      "Anti-inflammatory medicines or colchicine for flares as prescribed",
+      "Uric-acid-lowering medication for long term",
+      "Reduced alcohol, sugary drinks and red meat"
+    ],
+    "exercise_and_lifestyle": [
+      "Weight loss",
+      "Hydration",
+      "Gentle movement between flares"
+    ],
+    "caution": "Rest the joint during a flare; a hot swollen joint with fever needs urgent assessment to exclude infection."
+  },
+  {
+    "id": "fibromyalgia",
+    "name": "Fibromyalgia",
+    "aliases": [
+      "fibromyalgia",
+      "widespread pain",
+      "chronic body pain",
+      "tender points"
+    ],
+    "category": "Musculoskeletal",
+    "symptoms": [
+      "Widespread muscle pain",
+      "Fatigue",
+      "Poor sleep",
+      "Brain fog",
+      "Tender areas"
+    ],
+    "causes": [
+      "Altered pain processing in the nervous system",
+      "Stress",
+      "Sleep problems"
+    ],
+    "curability": "Not curable but symptoms can improve significantly with a combined approach.",
+    "conventional_treatment": [
+      "Graded exercise programme",
+      "Cognitive behavioural therapy",
+      "Certain medicines as prescribed",
+      "Sleep improvement"
+    ],
+    "exercise_and_lifestyle": [
+      "Start with gentle walking, swimming or yoga and increase slowly",
+      "Consistent sleep routine",
+      "Pacing activity"
+    ],
+    "caution": "Overdoing exercise early can cause flare-ups; build up gradually."
+  },
+  {
+    "id": "tendinitis",
+    "name": "Tendinitis / Tennis Elbow",
+    "aliases": [
+      "tendinitis",
+      "tendonitis",
+      "tennis elbow",
+      "golfer's elbow",
+      "tendon pain"
+    ],
+    "category": "Musculoskeletal",
+    "symptoms": [
+      "Pain near a joint that worsens with use",
+      "Tenderness",
+      "Mild swelling",
+      "Stiffness"
+    ],
+    "causes": [
+      "Repetitive strain",
+      "Overuse",
+      "Sudden increase in activity"
+    ],
+    "curability": "Usually heals with rest and rehabilitation over weeks to months.",
+    "conventional_treatment": [
+      "Activity modification",
+      "Physiotherapy with progressive loading",
+      "Short-term pain relief as advised",
+      "Injections or surgery in stubborn cases"
+    ],
+    "exercise_and_lifestyle": [
+      "Eccentric strengthening exercises guided by a physio",
+      "Warm up before activity",
+      "Improve technique and ergonomics"
+    ],
+    "caution": "Sudden loss of function or a popping sensation may indicate a tendon tear and needs assessment."
+  },
+  {
+    "id": "plantar-fasciitis",
+    "name": "Plantar Fasciitis",
+    "aliases": [
+      "plantar fasciitis",
+      "heel pain",
+      "foot arch pain",
+      "morning heel pain"
+    ],
+    "category": "Musculoskeletal",
+    "symptoms": [
+      "Sharp heel pain, worst with first steps in the morning",
+      "Pain after rest"
+    ],
+    "causes": [
+      "Overuse",
+      "Tight calf muscles",
+      "Flat feet or high arches",
+      "Unsupportive shoes"
+    ],
+    "curability": "Usually improves within months with consistent self-care.",
+    "conventional_treatment": [
+      "Calf and plantar fascia stretching",
+      "Supportive footwear or insoles",
+      "Ice and activity modification",
+      "Physiotherapy"
+    ],
+    "exercise_and_lifestyle": [
+      "Low-impact exercise like swimming or cycling while healing",
+      "Gradual return to running",
+      "Weight management"
+    ],
+    "caution": "Persistent pain beyond a few months needs assessment."
+  },
+  {
+    "id": "carpal-tunnel",
+    "name": "Carpal Tunnel Syndrome",
+    "aliases": [
+      "carpal tunnel",
+      "wrist numbness",
+      "tingling in hand",
+      "hand numbness"
+    ],
+    "category": "Musculoskeletal",
+    "symptoms": [
+      "Numbness or tingling in thumb and fingers",
+      "Night-time symptoms",
+      "Weak grip"
+    ],
+    "causes": [
+      "Compression of the median nerve at the wrist",
+      "Repetitive wrist use",
+      "Pregnancy",
+      "Diabetes"
+    ],
+    "curability": "Often improves with conservative care; surgery can cure persistent cases.",
+    "conventional_treatment": [
+      "Wrist splint at night",
+      "Activity modification",
+      "Steroid injection",
+      "Surgical release if severe or persistent"
+    ],
+    "exercise_and_lifestyle": [
+      "Nerve-gliding and wrist stretches",
+      "Ergonomic workstation",
+      "Regular breaks from repetitive tasks"
+    ],
+    "caution": "Constant numbness or muscle wasting at the thumb base needs prompt assessment."
+  },
+  {
+    "id": "ankle-sprain",
+    "name": "Ankle Sprain",
+    "aliases": [
+      "ankle sprain",
+      "twisted ankle",
+      "sprain",
+      "ligament injury"
+    ],
+    "category": "Musculoskeletal",
+    "symptoms": [
+      "Pain and swelling around the ankle",
+      "Bruising",
+      "Difficulty putting weight on it"
+    ],
+    "causes": [
+      "Sudden twisting of the ankle stretching or tearing ligaments"
+    ],
+    "curability": "Usually heals fully with proper care in a few weeks.",
+    "conventional_treatment": [
+      "Rest, ice, compression and elevation early on",
+      "Pain relief as advised",
+      "Physiotherapy",
+      "Brace or support if needed"
+    ],
+    "exercise_and_lifestyle": [
+      "Gentle range-of-motion then balance and strengthening exercises",
+      "Gradual return to sport"
+    ],
+    "caution": "Inability to walk four steps or bone tenderness may indicate a fracture and needs an X-ray."
+  },
+  {
+    "id": "tension-headache",
+    "name": "Tension Headache",
+    "aliases": [
+      "tension headache",
+      "stress headache",
+      "band-like headache",
+      "head pressure"
+    ],
+    "category": "Neurological",
+    "symptoms": [
+      "Dull band-like pressure around the head",
+      "Tight neck and shoulders",
+      "Mild to moderate pain"
+    ],
+    "causes": [
+      "Stress",
+      "Poor posture",
+      "Eye strain",
+      "Poor sleep",
+      "Dehydration"
+    ],
+    "curability": "Very common and manageable; usually not serious.",
+    "conventional_treatment": [
+      "Simple pain relief as directed",
+      "Hydration and regular meals",
+      "Stress management",
+      "Posture and screen-break habits"
+    ],
+    "exercise_and_lifestyle": [
+      "Regular aerobic exercise",
+      "Neck and shoulder stretches",
+      "Consistent sleep"
+    ],
+    "caution": "Sudden thunderclap headache, headache with fever and stiff neck, or after head injury needs emergency care."
+  },
+  {
+    "id": "epilepsy",
+    "name": "Epilepsy",
+    "aliases": [
+      "epilepsy",
+      "seizures",
+      "fits",
+      "convulsions"
+    ],
+    "category": "Neurological",
+    "symptoms": [
+      "Recurrent seizures",
+      "Temporary confusion",
+      "Staring spells",
+      "Uncontrolled jerking"
+    ],
+    "causes": [
+      "Brain injury",
+      "Genetics",
+      "Stroke",
+      "Infections",
+      "Often unknown"
+    ],
+    "curability": "Not curable in most cases but controlled with medication in about 70% of people.",
+    "conventional_treatment": [
+      "Anti-seizure medicines taken regularly as prescribed",
+      "Surgery or nerve stimulation in drug-resistant cases",
+      "Trigger avoidance"
+    ],
+    "exercise_and_lifestyle": [
+      "Regular sleep",
+      "Regular exercise is generally beneficial",
+      "Avoid alcohol excess and sleep deprivation"
+    ],
+    "caution": "Call emergency services if a seizure lasts over 5 minutes or repeats without recovery. Take precautions around water and heights."
+  },
+  {
+    "id": "parkinsons",
+    "name": "Parkinson's Disease",
+    "aliases": [
+      "parkinson",
+      "parkinson's disease",
+      "tremor and stiffness",
+      "shaking hands"
+    ],
+    "category": "Neurological",
+    "symptoms": [
+      "Resting tremor",
+      "Slow movement",
+      "Stiffness",
+      "Balance problems",
+      "Small handwriting"
+    ],
+    "causes": [
+      "Loss of dopamine-producing brain cells"
+    ],
+    "curability": "Not curable; symptoms are managed with medication and therapy for many years.",
+    "conventional_treatment": [
+      "Levodopa and other dopamine-related medicines as prescribed",
+      "Physiotherapy and speech therapy",
+      "Deep brain stimulation in selected patients"
+    ],
+    "exercise_and_lifestyle": [
+      "Regular exercise (walking, cycling, tai chi, boxing-style programmes) improves mobility and balance",
+      "Fall-prevention measures"
+    ],
+    "caution": "Regular neurologist review is important as medication needs change over time."
+  },
+  {
+    "id": "alzheimers",
+    "name": "Alzheimer's Disease / Dementia",
+    "aliases": [
+      "alzheimer",
+      "dementia",
+      "memory loss",
+      "forgetfulness",
+      "cognitive decline"
+    ],
+    "category": "Neurological",
+    "symptoms": [
+      "Progressive memory loss",
+      "Confusion",
+      "Difficulty with familiar tasks",
+      "Mood or personality changes"
+    ],
+    "causes": [
+      "Age",
+      "Genetics",
+      "Vascular disease",
+      "Brain protein changes"
+    ],
+    "curability": "Not curable; some medicines and care approaches can ease symptoms and support quality of life.",
+    "conventional_treatment": [
+      "Cholinesterase inhibitors or other medicines as prescribed",
+      "Cognitive stimulation and structured routines",
+      "Support for carers",
+      "Managing vascular risk factors"
+    ],
+    "exercise_and_lifestyle": [
+      "Regular physical activity supports brain health",
+      "Social engagement",
+      "Heart-healthy diet"
+    ],
+    "caution": "Sudden confusion can signal infection or stroke and needs urgent evaluation."
+  },
+  {
+    "id": "vertigo",
+    "name": "Vertigo (BPPV)",
+    "aliases": [
+      "vertigo",
+      "dizziness",
+      "spinning sensation",
+      "bppv",
+      "room spinning"
+    ],
+    "category": "Neurological",
+    "symptoms": [
+      "Spinning sensation with head movement",
+      "Nausea",
+      "Loss of balance",
+      "Brief episodes"
+    ],
+    "causes": [
+      "Displaced crystals in the inner ear (BPPV)",
+      "Inner ear infection",
+      "Migraine"
+    ],
+    "curability": "BPPV is often cured in one or two sessions of a repositioning manoeuvre (Epley).",
+    "conventional_treatment": [
+      "Epley or other repositioning manoeuvres by a trained clinician",
+      "Vestibular rehabilitation exercises",
+      "Treating the underlying cause"
+    ],
+    "exercise_and_lifestyle": [
+      "Move slowly when changing position",
+      "Balance exercises",
+      "Avoid sudden head movements during episodes"
+    ],
+    "caution": "Vertigo with double vision, weakness, slurred speech or severe headache needs emergency evaluation for stroke."
+  },
+  {
+    "id": "bipolar",
+    "name": "Bipolar Disorder",
+    "aliases": [
+      "bipolar",
+      "manic depression",
+      "mania",
+      "mood swings extreme"
+    ],
+    "category": "Mental health",
+    "symptoms": [
+      "Episodes of elevated or irritable mood",
+      "Reduced need for sleep",
+      "Racing thoughts",
+      "Depressive episodes"
+    ],
+    "causes": [
+      "Genetics",
+      "Brain chemistry",
+      "Stress",
+      "Sleep disruption"
+    ],
+    "curability": "Not curable but usually well controlled with long-term treatment.",
+    "conventional_treatment": [
+      "Mood stabilisers and other medicines as prescribed by a psychiatrist",
+      "Psychotherapy and psychoeducation",
+      "Regular sleep and routine"
+    ],
+    "exercise_and_lifestyle": [
+      "Regular exercise and sleep schedule",
+      "Avoid alcohol and drugs",
+      "Track mood"
+    ],
+    "caution": "Do not stop medication suddenly. Thoughts of self-harm need immediate professional help."
+  },
+  {
+    "id": "adhd",
+    "name": "ADHD (Attention-Deficit/Hyperactivity Disorder)",
+    "aliases": [
+      "adhd",
+      "attention deficit",
+      "hyperactivity",
+      "cannot focus",
+      "inattention"
+    ],
+    "category": "Mental health",
+    "symptoms": [
+      "Difficulty sustaining attention",
+      "Impulsivity",
+      "Restlessness",
+      "Disorganisation",
+      "Forgetfulness"
+    ],
+    "causes": [
+      "Genetics",
+      "Brain development differences"
+    ],
+    "curability": "Not curable but symptoms are very manageable with the right support.",
+    "conventional_treatment": [
+      "Behavioural strategies and coaching",
+      "Stimulant or non-stimulant medication as prescribed by a specialist",
+      "Educational or workplace adjustments"
+    ],
+    "exercise_and_lifestyle": [
+      "Regular aerobic exercise improves focus",
+      "Consistent routines",
+      "Good sleep"
+    ],
+    "caution": "Diagnosis and medication should be handled by a qualified clinician."
+  },
+  {
+    "id": "ptsd",
+    "name": "Post-Traumatic Stress Disorder (PTSD)",
+    "aliases": [
+      "ptsd",
+      "post traumatic stress",
+      "trauma flashbacks",
+      "nightmares after trauma"
+    ],
+    "category": "Mental health",
+    "symptoms": [
+      "Flashbacks",
+      "Nightmares",
+      "Avoidance",
+      "Hypervigilance",
+      "Emotional numbness"
+    ],
+    "causes": [
+      "Exposure to a traumatic event"
+    ],
+    "curability": "Highly treatable; many people recover substantially with trauma-focused therapy.",
+    "conventional_treatment": [
+      "Trauma-focused CBT or EMDR",
+      "Certain medicines as prescribed",
+      "Support groups"
+    ],
+    "exercise_and_lifestyle": [
+      "Regular exercise and yoga can reduce arousal",
+      "Consistent sleep routine",
+      "Limit alcohol"
+    ],
+    "caution": "If you are having thoughts of self-harm, seek immediate help from a crisis service or emergency care."
+  },
+  {
+    "id": "sleep-apnea",
+    "name": "Obstructive Sleep Apnea",
+    "aliases": [
+      "sleep apnea",
+      "sleep apnoea",
+      "snoring with pauses",
+      "stops breathing at night"
+    ],
+    "category": "Sleep",
+    "symptoms": [
+      "Loud snoring",
+      "Pauses in breathing during sleep",
+      "Daytime sleepiness",
+      "Morning headaches"
+    ],
+    "causes": [
+      "Airway collapse during sleep",
+      "Obesity",
+      "Enlarged tonsils"
+    ],
+    "curability": "Not usually curable but very effectively treated; weight loss can resolve mild cases.",
+    "conventional_treatment": [
+      "Sleep study for diagnosis",
+      "CPAP machine",
+      "Oral appliances",
+      "Surgery in selected cases"
+    ],
+    "exercise_and_lifestyle": [
+      "Weight loss",
+      "Regular exercise",
+      "Avoid alcohol before bed",
+      "Sleep on your side"
+    ],
+    "caution": "Untreated sleep apnea raises risk of high blood pressure, heart disease and accidents from drowsiness."
+  },
+  {
+    "id": "hyperthyroidism",
+    "name": "Hyperthyroidism",
+    "aliases": [
+      "hyperthyroidism",
+      "overactive thyroid",
+      "graves disease",
+      "thyrotoxicosis"
+    ],
+    "category": "Endocrine",
+    "symptoms": [
+      "Weight loss",
+      "Rapid heartbeat",
+      "Anxiety",
+      "Heat intolerance",
+      "Tremor",
+      "Sweating"
+    ],
+    "causes": [
+      "Graves' disease",
+      "Thyroid nodules",
+      "Thyroiditis"
+    ],
+    "curability": "Usually curable or well controlled with treatment.",
+    "conventional_treatment": [
+      "Antithyroid medicines as prescribed",
+      "Radioactive iodine",
+      "Thyroid surgery",
+      "Beta blockers for symptom relief"
+    ],
+    "exercise_and_lifestyle": [
+      "Avoid strenuous exercise until thyroid levels are controlled",
+      "Balanced diet",
+      "Regular thyroid tests"
+    ],
+    "caution": "Chest pain, very fast heartbeat or confusion needs urgent care."
+  },
+  {
+    "id": "dysmenorrhea",
+    "name": "Menstrual Cramps (Dysmenorrhea)",
+    "aliases": [
+      "menstrual cramps",
+      "period pain",
+      "dysmenorrhea",
+      "painful periods"
+    ],
+    "category": "Reproductive",
+    "symptoms": [
+      "Cramping lower abdominal pain before or during periods",
+      "Back pain",
+      "Nausea"
+    ],
+    "causes": [
+      "Uterine contractions from prostaglandins",
+      "Endometriosis or fibroids in secondary cases"
+    ],
+    "curability": "Usually manageable; underlying causes can be treated if found.",
+    "conventional_treatment": [
+      "Heat therapy",
+      "Pain relief as advised",
+      "Hormonal contraception as prescribed",
+      "Investigation if pain is severe"
+    ],
+    "exercise_and_lifestyle": [
+      "Regular exercise reduces cramp severity",
+      "Yoga and stretching",
+      "Adequate sleep"
+    ],
+    "caution": "Severe pain that disrupts daily life, or pain that is getting worse, should be assessed by a doctor."
+  },
+  {
+    "id": "endometriosis",
+    "name": "Endometriosis",
+    "aliases": [
+      "endometriosis",
+      "severe period pain",
+      "pelvic pain chronic"
+    ],
+    "category": "Reproductive",
+    "symptoms": [
+      "Painful periods",
+      "Chronic pelvic pain",
+      "Pain with intercourse",
+      "Heavy bleeding",
+      "Difficulty conceiving"
+    ],
+    "causes": [
+      "Tissue similar to womb lining growing outside the uterus"
+    ],
+    "curability": "Not curable but symptoms can be controlled; surgery can remove lesions.",
+    "conventional_treatment": [
+      "Pain relief",
+      "Hormonal treatments as prescribed",
+      "Laparoscopic surgery",
+      "Fertility support if needed"
+    ],
+    "exercise_and_lifestyle": [
+      "Regular low-impact exercise and pelvic-floor physiotherapy",
+      "Heat therapy",
+      "Stress reduction"
+    ],
+    "caution": "Diagnosis is often delayed; persistent pelvic pain deserves specialist review."
+  },
+  {
+    "id": "bph",
+    "name": "Enlarged Prostate (BPH)",
+    "aliases": [
+      "bph",
+      "enlarged prostate",
+      "prostate enlargement",
+      "difficulty urinating men",
+      "frequent urination at night"
+    ],
+    "category": "Urinary",
+    "symptoms": [
+      "Weak urine stream",
+      "Frequent urination, especially at night",
+      "Hesitancy",
+      "Feeling of incomplete emptying"
+    ],
+    "causes": [
+      "Age-related prostate growth and hormonal changes"
+    ],
+    "curability": "Not curable but treatable; symptoms can be relieved with medication or surgery.",
+    "conventional_treatment": [
+      "Alpha blockers and 5-alpha reductase inhibitors as prescribed",
+      "Minimally invasive procedures or surgery",
+      "Regular monitoring"
+    ],
+    "exercise_and_lifestyle": [
+      "Reduce fluids before bed",
+      "Limit caffeine and alcohol",
+      "Regular exercise",
+      "Pelvic floor exercises"
+    ],
+    "caution": "Being unable to urinate, blood in urine or fever with urinary symptoms needs urgent care."
+  },
+  {
+    "id": "menopause",
+    "name": "Menopause Symptoms",
+    "aliases": [
+      "menopause",
+      "hot flushes",
+      "hot flashes",
+      "perimenopause",
+      "night sweats"
+    ],
+    "category": "Reproductive",
+    "symptoms": [
+      "Hot flushes",
+      "Night sweats",
+      "Sleep problems",
+      "Mood changes",
+      "Vaginal dryness"
+    ],
+    "causes": [
+      "Natural fall in oestrogen with ageing"
+    ],
+    "curability": "A natural stage of life; symptoms are manageable rather than a disease to cure.",
+    "conventional_treatment": [
+      "Hormone replacement therapy for suitable patients, discussed with a doctor",
+      "Non-hormonal medicines",
+      "Vaginal treatments",
+      "Cognitive behavioural therapy"
+    ],
+    "exercise_and_lifestyle": [
+      "Weight-bearing and resistance exercise protect bones",
+      "Regular aerobic exercise",
+      "Layered clothing",
+      "Limit caffeine and alcohol"
+    ],
+    "caution": "Bleeding after menopause should always be checked by a doctor. Bone health monitoring is important."
+  },
+  {
+    "id": "vitamin-d-deficiency",
+    "name": "Vitamin D Deficiency",
+    "aliases": [
+      "vitamin d deficiency",
+      "low vitamin d",
+      "rickets",
+      "osteomalacia"
+    ],
+    "category": "Nutritional",
+    "symptoms": [
+      "Bone pain",
+      "Muscle weakness",
+      "Fatigue",
+      "Low mood",
+      "Frequent infections"
+    ],
+    "causes": [
+      "Little sun exposure",
+      "Dark skin",
+      "Poor diet",
+      "Absorption problems"
+    ],
+    "curability": "Easily corrected with supplementation and sensible sun exposure guided by testing.",
+    "conventional_treatment": [
+      "Blood test to confirm",
+      "Vitamin D supplements as advised",
+      "Foods such as oily fish and fortified products"
+    ],
+    "exercise_and_lifestyle": [
+      "Safe daily sun exposure",
+      "Weight-bearing exercise",
+      "Recheck levels as advised"
+    ],
+    "caution": "Very high supplement doses can be harmful; follow medical guidance."
+  },
+  {
+    "id": "dehydration",
+    "name": "Dehydration",
+    "aliases": [
+      "dehydration",
+      "dehydrated",
+      "dry mouth thirst",
+      "signs of dehydration",
+      "not drinking enough water"
+    ],
+    "category": "General",
+    "symptoms": [
+      "Thirst",
+      "Dry mouth",
+      "Dark urine",
+      "Dizziness",
+      "Headache",
+      "Fatigue"
+    ],
+    "causes": [
+      "Not drinking enough",
+      "Sweating",
+      "Vomiting or diarrhoea",
+      "Fever",
+      "Heat exposure"
+    ],
+    "curability": "Mild dehydration is quickly reversed by drinking fluids; severe cases need medical care.",
+    "conventional_treatment": [
+      "Water or oral rehydration solution in small frequent sips",
+      "Treat the cause such as vomiting or diarrhoea",
+      "Intravenous fluids for severe cases"
+    ],
+    "exercise_and_lifestyle": [
+      "Drink regularly through the day and around exercise",
+      "Avoid strenuous exercise in heat until rehydrated",
+      "Limit alcohol"
+    ],
+    "caution": "Confusion, fainting, rapid heartbeat, or inability to keep fluids down needs urgent medical care, particularly in children and older adults."
+  },
+  {
+    "id": "dental-cavities",
+    "name": "Dental Cavities & Gum Disease",
+    "aliases": [
+      "cavities",
+      "tooth decay",
+      "toothache",
+      "gum disease",
+      "gingivitis",
+      "bleeding gums",
+      "periodontitis"
+    ],
+    "category": "Dental",
+    "symptoms": [
+      "Tooth pain or sensitivity",
+      "Visible holes or dark spots",
+      "Bleeding or swollen gums",
+      "Bad breath"
+    ],
+    "causes": [
+      "Plaque bacteria",
+      "Sugary diet",
+      "Poor oral hygiene",
+      "Smoking"
+    ],
+    "curability": "Cavities are treated with fillings; early gum disease is reversible with good oral care.",
+    "conventional_treatment": [
+      "Dental check-up and cleaning",
+      "Fillings or root canal treatment",
+      "Scaling for gum disease",
+      "Fluoride products"
+    ],
+    "exercise_and_lifestyle": [
+      "Brush twice daily with fluoride toothpaste",
+      "Clean between teeth",
+      "Limit sugary snacks and drinks",
+      "Stop smoking"
+    ],
+    "caution": "Facial swelling, fever or severe pain suggests an abscess and needs prompt dental or medical care."
+  }
+]
