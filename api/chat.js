@@ -1,17 +1,13 @@
 // /api/chat.js
-// Vercel serverless function. Keeps the Anthropic API key on the server and
-// grounds answers in data/diseases.json (80 curated conditions).
+// Vercel serverless function. 
+// Grounds answers STRICTLY in data/diseases.json (No Anthropic API Key required!).
 //
 // Flow: browser -> POST /api/chat { message }
-//   1. retrieve matching conditions from the dataset
-//   2. inject them into the system prompt as reference data
-//   3. call Anthropic
+//   1. check for urgent/emergency health keywords
+//   2. retrieve matching conditions from the dataset
+//   3. format the data directly into a user-friendly reply
 //   4. return { reply, sources }
-//
-// Set ANTHROPIC_API_KEY in Vercel > Settings > Environment Variables.
 
-// Pure CommonJS on purpose: require() + module.exports, no ESM syntax mixed in.
-// A literal relative require() path lets Vercel's bundler include the JSON file.
 let diseases = [];
 try {
   diseases = require("../data/diseases.json");
@@ -20,21 +16,19 @@ try {
 }
 
 function escapeRegExp(s) {
-  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return s.replace(/[.*+?^\${}()|[\]\\]/g, "\\$&");
 }
 
-// Precompile one word-boundary regex per alias. \b prevents "tb" matching
-// inside "outbreak" or "ra" inside "brain". Runs once per cold start.
+// Precompile regex per alias.
 const indexed = diseases.map((d) => ({
   disease: d,
-  patterns: d.aliases.map((alias) => ({
+  patterns: (d.aliases || []).map((alias) => ({
     re: new RegExp("\\b" + escapeRegExp(alias.toLowerCase()) + "\\b"),
-    weight: alias.trim().split(/\s+/).length, // multi-word aliases are more specific
+    weight: alias.trim().split(/\s+/).length,
   })),
 }));
 
-// Keyword retrieval (RAG-lite). Score = sum of weights of matched aliases,
-// so "type 1 diabetes" (weight 3) outranks a bare "diabetes" (weight 1).
+// Keyword retrieval engine
 function findRelevantDiseases(message, maxResults = 3) {
   const text = String(message).toLowerCase();
   return indexed
@@ -48,34 +42,30 @@ function findRelevantDiseases(message, maxResults = 3) {
     .map((e) => e.disease);
 }
 
-function buildContext(matches) {
-  if (matches.length === 0) return null;
-  return matches
-    .map((d) =>
-      [
-        `### ${d.name} (${d.category})`,
-        `Symptoms: ${d.symptoms.join(", ")}`,
-        `Common causes: ${d.causes.join(", ")}`,
-        `Curability: ${d.curability}`,
-        `Conventional treatment approaches: ${d.conventional_treatment.join(", ")}`,
-        `Exercise & lifestyle: ${d.exercise_and_lifestyle.join(", ")}`,
-        `Caution: ${d.caution}`,
-      ].join("\n")
-    )
-    .join("\n\n");
+// Quick keyword scanner for emergency warning signs
+function checkEmergency(message) {
+  const text = String(message).toLowerCase();
+  const criticalKeywords = [
+    "chest pain", "trouble breathing", "shortness of breath", "stroke", 
+    "severe bleeding", "heavy bleeding", "confusion", "suicidal", 
+    "unconscious", "heart attack", "choking"
+  ];
+  return criticalKeywords.some(keyword => text.includes(keyword));
 }
 
-const BASE_SYSTEM_PROMPT = `You are Vitalline, a friendly health-education assistant on a wellness website.
-
-Explain diseases and conditions in plain language: what they are, common symptoms, whether they are curable or manageable, the usual treatment approaches, and which exercise or lifestyle changes help. Keep answers to 4-7 sentences, warm but factual.
-
-If reference data is provided below, treat it as verified and ground your answer in it. Do not contradict it and prefer it over your own general knowledge. If none is provided, answer from general knowledge but stay conservative and evidence-based.
-
-Be honest about "cure": say clearly whether a condition is curable, self-limiting, or only manageable. Never present a treatment as a guaranteed cure.
-
-Never state specific medication dosages. Mention treatment categories only (for example "an antibiotic" or "a statin") and say that any medicine must be chosen and prescribed by a licensed doctor. Never advise starting or stopping prescription medicine.
-
-You are not a doctor and cannot diagnose. If the person describes an emergency or red-flag symptoms (chest pain, trouble breathing, stroke signs, severe bleeding, confusion, suicidal thoughts, and similar), tell them to contact local emergency services immediately instead of giving self-care advice. End with a short reminder to consult a doctor for diagnosis and treatment.`;
+// Formats your raw JSON records into clean, educational text
+function formatLocalResponse(matches) {
+  return matches
+    .map((d) => {
+      return `### ${d.name} (${d.category})\n` +
+             `• **What it is & Causes:** Common causes include ${d.causes.join(", ")}.\n` +
+             `• **Symptoms:** Watch out for ${d.symptoms.join(", ")}.\n` +
+             `• **Curability:** This condition is ${d.curability.toLowerCase()}.\n` +
+             `• **Management:** Conventional treatment approaches include ${d.conventional_treatment.join(", ")}. Helpful exercise and lifestyle choices include ${d.exercise_and_lifestyle.join(", ")}.\n` +
+             `• **Caution:** ${d.caution}`;
+    })
+    .join("\n\n---\n\n");
+}
 
 async function handler(req, res) {
   if (req.method !== "POST") {
@@ -91,54 +81,34 @@ async function handler(req, res) {
     return res.status(400).json({ error: "Message too long (max 1000 characters)" });
   }
 
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    return res.status(500).json({ error: "Server is missing ANTHROPIC_API_KEY" });
-  }
-
-  const matches = findRelevantDiseases(message);
-  const context = buildContext(matches);
-  const systemPrompt = context
-    ? `${BASE_SYSTEM_PROMPT}\n\n---\nREFERENCE DATA (verified; prefer this over general knowledge):\n\n${context}`
-    : BASE_SYSTEM_PROMPT;
-
-  try {
-    const upstream = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "x-api-key": apiKey,
-        "anthropic-version": "2023-06-01",
-      },
-      body: JSON.stringify({
-        model: "claude-sonnet-4-6",
-        max_tokens: 1000,
-        system: systemPrompt,
-        messages: [{ role: "user", content: message }],
-      }),
+  // 1. Check for red-flag emergency symptoms first
+  if (checkEmergency(message)) {
+    return res.status(200).json({
+      reply: "🚨 **Emergency Notice:** If you or someone else is experiencing severe symptoms like chest pain, trouble breathing, heavy bleeding, sudden confusion, or deep distress, please contact your local emergency services immediately. Do not rely on self-care advice. Please consult a medical professional for an urgent diagnosis.",
+      sources: []
     });
-
-    if (!upstream.ok) {
-      const errText = await upstream.text();
-      console.error("Anthropic API error:", upstream.status, errText);
-      return res.status(502).json({ error: "Upstream AI service error" });
-    }
-
-    const data = await upstream.json();
-    const reply =
-      (data.content || [])
-        .map((b) => b.text || "")
-        .filter(Boolean)
-        .join(" ")
-        .trim() || "I couldn't generate a response just now. Please try again.";
-
-    return res.status(200).json({ reply, sources: matches.map((d) => d.name) });
-  } catch (err) {
-    console.error("Handler error:", err);
-    return res.status(500).json({ error: "Something went wrong reaching the AI service" });
   }
+
+  // 2. Query your local database using your search algorithm
+  const matches = findRelevantDiseases(message);
+
+  let reply = "";
+  if (matches.length > 0) {
+    // 3. Match found: Build clean educational output
+    reply = `Hello! Based on Vitalline's health database, here is some information related to your request:\n\n` + 
+            formatLocalResponse(matches) + 
+            `\n\n*Reminder: Vitalline provides educational information only. Always consult a licensed doctor or medical provider for a true diagnosis, prescriptions, or personalized treatment.*`;
+  } else {
+    // 4. Fallback if no conditions match the keywords
+    reply = "I couldn't find a matching health condition or specific symptom in our current database. Please check your spelling or search for common terms (such as 'Diabetes', 'Fatigue', or 'Hypertension'). For any persistent symptoms, always remember to consult a healthcare professional.";
+  }
+
+  // Return the output back to your frontend UI
+  return res.status(200).json({ 
+    reply: reply, 
+    sources: matches.map((d) => d.name) 
+  });
 }
 
 module.exports = handler;
-// Exposed only so retrieval can be unit-tested without calling the API.
 module.exports.findRelevantDiseases = findRelevantDiseases;
